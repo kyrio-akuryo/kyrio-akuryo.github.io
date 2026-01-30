@@ -1,1 +1,0 @@
-# kyrio-akuryo.github.io
