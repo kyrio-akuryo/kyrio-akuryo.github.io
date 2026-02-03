@@ -5,10 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OSU Profile Cover</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <div class="container">
+        <h2>Ta Carte Générée</h2>
+        <canvas id="cardCanvas" width="600" height="300"></canvas>
+        <br>
+        <a id="downloadBtn" class="btn">Télécharger en .PNG</a>
 
+        <div class="info">
+            <p>Utilise l'URL pour changer les infos : <br>
+                <code>?pseudo=TonNom&color=orange&avatar=https://...</code>
+            </p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
