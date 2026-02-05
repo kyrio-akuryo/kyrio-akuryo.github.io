@@ -77,6 +77,7 @@ main {
 
 .table-container {
     overflow-x: auto;
+    padding: 10px; 
 }
 
 table {
@@ -333,18 +334,12 @@ tbody tr:hover {
     opacity: 0.9;
 }
 
-.status-active {
-    box-shadow: 0 0 0 2px #55ff55;
-}
-
 .status-inactive {
     box-shadow: 0 0 0 2px #ffaa00;
-}
-
-tbody tr.status-active:hover {
-    box-shadow: 0 0 0 2px #55ff55, 0 6px 12px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    position: relative;
 }
 
 tbody tr.status-inactive:hover {
-    box-shadow: 0 0 0 2px #ffaa00, 0 6px 12px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 0 2px #ffaa00, 0 6px 12px rgba(0,0,0,0.6);
 }

@@ -117,11 +117,7 @@ function renderTable() {
                 tr.style.backgroundImage = `linear-gradient(${overlayColor}, ${overlayColor}), url('${coverUrl}')`;
             }
 
-            if (player.is_active) {
-                tr.classList.add('status-active');
-            }
-            
-            else {
+            if (!player.is_active) {
                 tr.classList.add('status-inactive');
             }
 
