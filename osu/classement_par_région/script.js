@@ -115,17 +115,24 @@ function renderTable() {
                 const teamFlag = player.team.flag_url;
 
                 if (teamFlag) {
-                    teamHTML = `
-                        <div class="team-info">
-                            <img src="${teamFlag}" alt="${teamName}" class="team-flag">
-                            <span class="team-name">${teamName}</span>
-                        </div>
-                    `;
+                    teamHTML = `<div class=\"team-info\"><img src=\"${teamFlag}\" class=\"team-flag\"><span class=\"team-name\">${teamName}</span></div>`;
                 }
-                
+
                 else {
-                    teamHTML = `<span class="team-name">${teamName}</span>`;
+                    teamHTML = `<span class=\"team-name\">${teamName}</span>`;
                 }
+            }
+
+            let tooltipHTML = "";
+
+            if (player.previous_usernames && player.previous_usernames.length > 0) {
+                const prevNames = player.previous_usernames.join(", ");
+                tooltipHTML = `
+                    <div class="prev-names-tooltip">
+                        <span class="tooltip-title">Anciennement</span>
+                        ${prevNames}
+                    </div>
+                `;
             }
 
             tr.innerHTML = `
@@ -134,9 +141,12 @@ function renderTable() {
                     <div class="player-info">
                         <img src="${avatar}" alt="" class="avatar" loading="lazy">
                         <div style="display:flex; flex-direction:column;">
-                            <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="player-link ${groupClass}">
-                                ${player.username}
-                            </a>
+                            <div class="name-container">
+                                <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="player-link ${groupClass}">
+                                    ${player.username}
+                                </a>
+                                ${tooltipHTML}
+                            </div>
                             ${groupBadgeHTML}
                         </div>
                     </div>
@@ -150,7 +160,7 @@ function renderTable() {
             `;
             tbody.appendChild(tr);
         }
-        
+
         catch (e) {
             console.error("Erreur d'affichage :", e);
         }
