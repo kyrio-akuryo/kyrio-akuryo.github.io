@@ -142,3 +142,38 @@ footer {
     color: #777;
     font-size: 0.9rem;
 }
+
+/* Barre de recherche */
+.controls {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+    /* Place la barre à droite */
+}
+
+#search-input {
+    background-color: var(--card-bg);
+    border: 1px solid #444;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 25px;
+    /* Bords bien ronds */
+    width: 100%;
+    max-width: 300px;
+    outline: none;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+}
+
+#search-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 5px rgba(255, 102, 170, 0.5);
+}
+
+/* Petit ajustement si aucun résultat */
+.no-result {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-style: italic;
+}

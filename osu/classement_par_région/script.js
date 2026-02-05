@@ -9,13 +9,12 @@ const REGIONS = [
 
 // Variables d'état
 let currentData = [];
-let currentSort = { column: 'global_rank', direction: 'asc' }; // Par défaut : Rang Global croissant (1er est mieux)
+let currentSort = { column: 'global_rank', direction: 'asc' };
+let searchTerm = ""; // <--- NOUVELLE VARIABLE
 
-// Initialisation au chargement
 document.addEventListener('DOMContentLoaded', () => {
+    // ... (Code existant pour le select de région) ...
     const selector = document.getElementById('region-select');
-
-    // Remplir le menu déroulant
     REGIONS.forEach(region => {
         const option = document.createElement('option');
         option.value = region;
@@ -23,31 +22,35 @@ document.addEventListener('DOMContentLoaded', () => {
         selector.appendChild(option);
     });
 
-    // Écouteur de changement de région
     selector.addEventListener('change', (e) => {
         loadRegion(e.target.value);
+    });
+
+    // --- NOUVEAU : Écouteur pour la recherche ---
+    const searchInput = document.getElementById('search-input');
+    searchInput.addEventListener('input', (e) => {
+        searchTerm = e.target.value.toLowerCase(); // On stocke en minuscule
+        renderTable(); // On rafraîchit le tableau
     });
 });
 
 function showHome() {
+    // ... (Code existant) ...
     document.getElementById('home-section').classList.remove('hidden');
     document.getElementById('ranking-section').classList.add('hidden');
-    document.getElementById('region-select').value = ""; // Reset select
+    document.getElementById('region-select').value = "";
+
+    // Reset de la recherche quand on revient à l'accueil
+    document.getElementById('search-input').value = "";
+    searchTerm = "";
 }
 
 async function loadRegion(regionName) {
-    // Construction du nom de fichier (doit correspondre à la logique "safe_filename" du Python)
-    // Ici on assume que le Python a géré les noms proprement.
-    // Pour simplifier, assurez-vous que les noms de fichiers JSON correspondent aux noms dans REGIONS.
-    // Si votre Python remplace les espaces par des tirets, adaptez ici :
-    // const fileName = regionName.replace(/ /g, '-') + ".json"; 
+    // ... (Début de fonction identique) ...
+    // ... Reset de la recherche au changement de région
+    searchTerm = "";
+    document.getElementById('search-input').value = "";
 
-    // Si votre Python garde les espaces ou gère les accents, encodeURIComponent est plus sûr pour l'URL
-    // Mais attention, cela dépend EXACTEMENT de comment le fichier est nommé sur le disque.
-    // Si le fichier s'appelle "Île-de-France.json", le chemin doit être exact.
-
-    // Méthode simple : on tente de charger le fichier avec le nom brut
-    // (Les navigateurs modernes gèrent bien les espaces/accents en local/web)
     const filePath = `exports_regions/${regionName}.json`;
 
     try {
@@ -57,28 +60,40 @@ async function loadRegion(regionName) {
         const data = await response.json();
         currentData = data;
 
-        // Affichage
         document.getElementById('home-section').classList.add('hidden');
         document.getElementById('ranking-section').classList.remove('hidden');
         document.getElementById('current-region-title').textContent = `Classement : ${regionName}`;
 
-        // Tri par défaut et rendu
-        sortTable('global_rank');
+        sortTable('global_rank'); // Cela appellera renderTable à la fin
 
     } catch (error) {
-        alert("Impossible de charger les données pour cette région. Vérifiez que le fichier JSON existe bien dans le dossier exports_regions.");
+        alert("Impossible de charger les données...");
         console.error(error);
     }
 }
 
+// --- FONCTION MODIFIÉE : renderTable ---
 function renderTable() {
     const tbody = document.getElementById('table-body');
-    tbody.innerHTML = ''; // Vider le tableau
+    tbody.innerHTML = '';
 
-    currentData.forEach(player => {
+    // 1. On filtre les données selon le terme de recherche
+    const filteredData = currentData.filter(player => {
+        // On vérifie si le pseudo contient le terme (gestion des null incluse)
+        if (!player.username) return false;
+        return player.username.toLowerCase().includes(searchTerm);
+    });
+
+    // 2. Si aucun résultat
+    if (filteredData.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" class="no-result">Aucun joueur trouvé pour cette recherche.</td></tr>';
+        return;
+    }
+
+    // 3. On affiche les données filtrées
+    filteredData.forEach(player => {
         const tr = document.createElement('tr');
 
-        // Calcul pour l'affichage (gestion des nulls)
         const rank = player.global_rank ? `#${player.global_rank.toLocaleString()}` : 'Non classé';
         const pp = player.pp ? Math.round(player.pp).toLocaleString() : 0;
         const acc = player.hit_accuracy ? player.hit_accuracy.toFixed(2) + '%' : '0%';
@@ -89,7 +104,7 @@ function renderTable() {
             <td><span class="rank-pill">${rank}</span></td>
             <td>
                 <div class="player-info">
-                    <img src="${player.avatar_url}" alt="Avatar" class="avatar" loading="lazy">
+                    <img src="${player.avatar_url}" alt="" class="avatar" loading="lazy">
                     <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" style="color:white;text-decoration:none;font-weight:bold;">
                         ${player.username}
                     </a>
