@@ -3,7 +3,6 @@
     --card-bg: #2b2b2b;
     --text-color: #ffffff;
     --accent: #ff66aa;
-    /* Osu Pink */
     --accent-hover: #ff88bb;
     --header-bg: #111;
 }
@@ -18,7 +17,6 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
 header {
     background-color: var(--header-bg);
     padding: 1rem 2rem;
@@ -50,7 +48,6 @@ nav button {
     font-weight: bold;
 }
 
-/* Sections */
 main {
     flex: 1;
     padding: 2rem;
@@ -64,7 +61,6 @@ main {
     display: none;
 }
 
-/* Accueil */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -79,7 +75,6 @@ main {
     border-left: 4px solid var(--accent);
 }
 
-/* Tableau */
 .table-container {
     overflow-x: auto;
 }
@@ -143,12 +138,10 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Barre de recherche */
 .controls {
     margin-bottom: 15px;
     display: flex;
     justify-content: flex-end;
-    /* Place la barre à droite */
 }
 
 #search-input {
@@ -157,7 +150,6 @@ footer {
     color: white;
     padding: 12px 15px;
     border-radius: 25px;
-    /* Bords bien ronds */
     width: 100%;
     max-width: 300px;
     outline: none;
@@ -170,10 +162,55 @@ footer {
     box-shadow: 0 0 5px rgba(255, 102, 170, 0.5);
 }
 
-/* Petit ajustement si aucun résultat */
 .no-result {
     text-align: center;
     padding: 20px;
     color: #888;
     font-style: italic;
+}
+
+.player-link {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.player-link:hover {
+    text-decoration: underline;
+}
+
+.group-default {
+    color: #ffffff;
+}
+
+.group-supporter {
+    color: #eebb55;
+}
+
+.group-gmt {
+    color: #99eb99;
+}
+
+.group-dev {
+    color: #ff66aa;
+}
+
+.group-nat {
+    color: #eb8c66;
+}
+
+.group-bng {
+    color: #a366eb;
+}
+
+.group-bot {
+    color: #aaddff;
+}
+
+.group-alumni {
+    color: #999999;
+}
+
+.group-unknown {
+    color: #ffffff;
 }

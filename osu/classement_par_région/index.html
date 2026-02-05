@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osu! Regional Leaderboards</title>
+    <title>Classement OSU! français par régions</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <header>
-        <div class="logo">OSU! REGIONS</div>
+        <div class="logo">Classement OSU! français par régions</div>
         <nav>
             <button onclick="showHome()">Accueil</button>
             <select id="region-select">
@@ -20,7 +19,6 @@
             </select>
         </nav>
     </header>
-
     <main>
         <section id="home-section">
             <h1>Bienvenue sur le Classement Régional Osu!</h1>
@@ -43,14 +41,11 @@
                 </div>
             </div>
         </section>
-
         <section id="ranking-section" class="hidden">
             <h2 id="current-region-title">Classement</h2>
-
             <div class="controls">
                 <input type="text" id="search-input" placeholder="🔍 Rechercher un joueur..." autocomplete="off">
             </div>
-
             <div class="table-container">
                 <table>
                     <thead>
@@ -58,7 +53,6 @@
                             <th>Rang</th>
                             <th>Joueur</th>
                             <th onclick="sortTable('global_rank')">Mondial ⬍</th>
-
                             <th onclick="sortTable('pp')">PP ⬍</th>
                             <th onclick="sortTable('hit_accuracy')">Précision ⬍</th>
                             <th onclick="sortTable('play_count')">Parties jouées ⬍</th>
@@ -71,11 +65,9 @@
             </div>
         </section>
     </main>
-
     <footer>
         <p>Créé avec ❤️ en Python & JS - Données issues de l'API Osu!</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 
