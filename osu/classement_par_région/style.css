@@ -82,7 +82,7 @@ main {
 table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0 15px;
+    border-spacing: 0 8px;
     background: transparent;
 }
 
@@ -297,12 +297,8 @@ footer {
 }
 
 tbody tr {
-    background-color: var(--card-bg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
     border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 tbody tr td:first-child {
@@ -316,8 +312,8 @@ tbody tr td:last-child {
 }
 
 tbody tr:hover {
-    transform: scale(1.02);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
     position: relative;
+    z-index: 10;
 }
