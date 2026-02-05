@@ -46,8 +46,7 @@ function showHome() {
 }
 
 async function loadRegion(regionName) {
-    // ... (Début de fonction identique) ...
-    // ... Reset de la recherche au changement de région
+    // Reset de la recherche
     searchTerm = "";
     document.getElementById('search-input').value = "";
 
@@ -57,14 +56,40 @@ async function loadRegion(regionName) {
         const response = await fetch(filePath);
         if (!response.ok) throw new Error("Fichier introuvable");
 
-        const data = await response.json();
+        let data = await response.json();
+
+        // ---------------------------------------------------------
+        // ETAPE CLE : Calcul du classement régional
+        // ---------------------------------------------------------
+
+        // 1. On trie d'abord par classement mondial (le plus petit est le meilleur)
+        // Les joueurs sans rang (null) sont mis à la fin
+        data.sort((a, b) => {
+            let rankA = a.global_rank || 999999999;
+            let rankB = b.global_rank || 999999999;
+            return rankA - rankB;
+        });
+
+        // 2. On attribue le rang régional (1, 2, 3...) de façon fixe
+        // Ainsi, même si on trie par "Précision" plus tard, le #1 restera le #1
+        data.forEach((player, index) => {
+            // Si le joueur n'a pas de rang global, on ne lui donne pas de rang régional (optionnel)
+            if (player.global_rank) {
+                player.local_rank = index + 1;
+            } else {
+                player.local_rank = "-";
+            }
+        });
+
         currentData = data;
 
+        // Affichage
         document.getElementById('home-section').classList.add('hidden');
         document.getElementById('ranking-section').classList.remove('hidden');
         document.getElementById('current-region-title').textContent = `Classement : ${regionName}`;
 
-        sortTable('global_rank'); // Cela appellera renderTable à la fin
+        // On lance le rendu (le tri initial est déjà fait ci-dessus)
+        renderTable();
 
     } catch (error) {
         alert("Impossible de charger les données...");
@@ -77,37 +102,46 @@ function renderTable() {
     const tbody = document.getElementById('table-body');
     tbody.innerHTML = '';
 
-    // 1. On filtre les données selon le terme de recherche
+    // Filtrage recherche
     const filteredData = currentData.filter(player => {
-        // On vérifie si le pseudo contient le terme (gestion des null incluse)
         if (!player.username) return false;
         return player.username.toLowerCase().includes(searchTerm);
     });
 
-    // 2. Si aucun résultat
     if (filteredData.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="6" class="no-result">Aucun joueur trouvé pour cette recherche.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="6" class="no-result">Aucun joueur trouvé.</td></tr>';
         return;
     }
 
-    // 3. On affiche les données filtrées
     filteredData.forEach(player => {
         const tr = document.createElement('tr');
 
-        const rank = player.global_rank ? `#${player.global_rank.toLocaleString()}` : 'Non classé';
+        // UTILISATION DU RANG REGIONAL CALCULÉ
+        // On affiche #1, #2... ou "-" si pas classé
+        const regionRankDisplay = player.local_rank !== "-" ? `#${player.local_rank}` : "-";
+
+        // On garde le rang global en info-bulle (title) ou petit texte si besoin
+        // Ici je l'ajoute juste en "title" au survol de la pilule
+        const globalRankTooltip = player.global_rank ? `Mondial: #${player.global_rank.toLocaleString()}` : "Non classé";
+
         const pp = player.pp ? Math.round(player.pp).toLocaleString() : 0;
         const acc = player.hit_accuracy ? player.hit_accuracy.toFixed(2) + '%' : '0%';
         const playcount = player.play_count ? player.play_count.toLocaleString() : 0;
         const level = player.level ? player.level : 0;
 
         tr.innerHTML = `
-            <td><span class="rank-pill">${rank}</span></td>
+            <td>
+                <span class="rank-pill" title="${globalRankTooltip}">${regionRankDisplay}</span>
+            </td>
             <td>
                 <div class="player-info">
                     <img src="${player.avatar_url}" alt="" class="avatar" loading="lazy">
-                    <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" style="color:white;text-decoration:none;font-weight:bold;">
-                        ${player.username}
-                    </a>
+                    <div style="display:flex; flex-direction:column;">
+                        <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" style="color:white;text-decoration:none;font-weight:bold;">
+                            ${player.username}
+                        </a>
+                        <span style="font-size:0.8em; color:#888;">Mondial #${player.global_rank ? player.global_rank.toLocaleString() : "?"}</span>
+                    </div>
                 </div>
             </td>
             <td>${pp} pp</td>
