@@ -81,11 +81,9 @@ main {
 
 table {
     width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    background: var(--card-bg);
-    border-radius: 8px;
-    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    background: transparent;
 }
 
 th,
@@ -303,17 +301,23 @@ tbody tr {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: all 0.2s ease;
-    border-bottom: 4px solid var(--bg-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 8px;
+}
+
+tbody tr td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+tbody tr td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 tbody tr:hover {
-    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.4);
-    transform: translateY(-2px);
-}
-
-tbody td {
-    padding: 15px 10px;
-    border: none;
-    background: transparent;
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: relative;
 }

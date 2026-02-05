@@ -112,7 +112,7 @@ function renderTable() {
             }
 
             if (coverUrl) {
-                const overlayOpacity = "0.4";
+                const overlayOpacity = "0.6";
                 const overlayColor = `rgba(0, 0, 0, ${overlayOpacity})`;
                 tr.style.backgroundImage = `linear-gradient(${overlayColor}, ${overlayColor}), url('${coverUrl}')`;
             }
