@@ -1,0 +1,54 @@
+[
+    {
+        "id": 10818654,
+        "username": "Kyrio",
+        "previous_usernames": [
+            "kileurHusky",
+            "Kyrio_",
+            "TotorPotate 13"
+        ],
+        "avatar_url": "https://a.ppy.sh/10818654?1769876577.jpeg",
+        "cover_url": "https://assets.ppy.sh/user-profile-covers/10818654/1c4045571974cc93e5d377f1e7e2a634e1f16562362bc454e2beba3fcfeb2505.png",
+        "region": "Hauts-de-France",
+        "is_active": 1,
+        "is_deleted": 0,
+        "has_supported": 1,
+        "playstyle": [
+            "mouse",
+            "keyboard",
+            "tablet"
+        ],
+        "rank_highest": 23469,
+        "follower_count": 245,
+        "count_100": 1457243,
+        "count_300": 11215290,
+        "count_50": 171760,
+        "level": 100.0,
+        "global_rank": 39568,
+        "global_rank_percent": 1235.0,
+        "pp": 6733.05,
+        "ranked_score": 21386684370,
+        "hit_accuracy": 98.8108,
+        "play_count": 58255,
+        "play_time": 3457512,
+        "total_score": 94002973946,
+        "maximum_combo": 3269,
+        "replays_watched_by_others": 36,
+        "grade_counts": {
+            "ss": 20,
+            "ssh": 98,
+            "s": 600,
+            "sh": 1211,
+            "a": 1600
+        },
+        "country_rank": 1235,
+        "team": {
+            "flag_url": "https://assets.ppy.sh/teams/flag/18/40b35508023d1fb915607465979799d3080d5a274d99de3504bc0bd0cfa3d5c2.jpeg",
+            "id": 18,
+            "name": "The Method",
+            "short_name": "SCOR"
+        },
+        "default_group": "default",
+        "last_updated": "2026-02-05 15:41:27"
+    }
+]

@@ -3,33 +3,74 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Classement des joueurs Français par région</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osu! Regional Leaderboards</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <h1>Classement des Joueurs</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Rang</th>
-                    <th>Pseudo</th>
-                    <th>PP</th>
-                    <th>Précision</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>39568</td>
-                    <td class="username">Kyrio</td>
-                    <td class="pp">6733</td>
-                    <td>98,81%</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <script src="./script.js"></script>
+
+    <header>
+        <div class="logo">OSU! REGIONS</div>
+        <nav>
+            <button onclick="showHome()">Accueil</button>
+            <select id="region-select">
+                <option value="" disabled selected>Choisir une région...</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home-section">
+            <h1>Bienvenue sur le Classement Régional Osu!</h1>
+            <p>
+                Ce projet recense les joueurs d'Osu! par région française.
+                Les données sont mises à jour régulièrement via l'API officielle.
+            </p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Statistiques Précises</h3>
+                    <p>PP, Accuracy, Playcount et plus encore.</p>
+                </div>
+                <div class="card">
+                    <h3>Classement Local</h3>
+                    <p>Comparez-vous avec vos voisins.</p>
+                </div>
+                <div class="card">
+                    <h3>Open Source</h3>
+                    <p>Données transparentes et code disponible sur GitHub.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ranking-section" class="hidden">
+            <h2 id="current-region-title">Classement</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable('global_rank')">Rang Global ⬍</th>
+                            <th>Joueur</th>
+                            <th onclick="sortTable('pp')">PP ⬍</th>
+                            <th onclick="sortTable('hit_accuracy')">Précision ⬍</th>
+                            <th onclick="sortTable('play_count')">Parties jouées ⬍</th>
+                            <th onclick="sortTable('level')">Niveau ⬍</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Créé avec ❤️ en Python & JS - Données issues de l'API Osu!</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

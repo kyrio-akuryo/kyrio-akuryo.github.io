@@ -1,0 +1,51 @@
+[
+    {
+        "id": 14176480,
+        "username": "Raspigaous",
+        "previous_usernames": [
+            "Raspigaous_GG"
+        ],
+        "avatar_url": "https://a.ppy.sh/14176480?1757279972.jpeg",
+        "cover_url": "https://assets.ppy.sh/user-profile-covers/14176480/eb54449e34039f8e3afb54a5290574cc6666859e22b5a86061b5468d2abc9e41.jpeg",
+        "region": "Auvergne-Rhône-Alpes",
+        "is_active": 1,
+        "is_deleted": 0,
+        "has_supported": 1,
+        "playstyle": [
+            "keyboard",
+            "tablet"
+        ],
+        "rank_highest": 320,
+        "follower_count": 447,
+        "count_100": 5101196,
+        "count_300": 83277704,
+        "count_50": 494923,
+        "level": 110.0,
+        "global_rank": 521,
+        "global_rank_percent": 15.0,
+        "pp": 15237.7,
+        "ranked_score": 110953592817,
+        "hit_accuracy": 97.6474,
+        "play_count": 337930,
+        "play_time": 16132698,
+        "total_score": 1069113409132,
+        "maximum_combo": 8253,
+        "replays_watched_by_others": 2123,
+        "grade_counts": {
+            "ss": 76,
+            "ssh": 64,
+            "s": 733,
+            "sh": 1177,
+            "a": 3828
+        },
+        "country_rank": 15,
+        "team": {
+            "flag_url": "https://assets.ppy.sh/teams/flag/13487/002d327cd03e703e556337eb8b2c3d959dc5aba6c4c4b00febd683562a218857.jpeg",
+            "id": 13487,
+            "name": "YuriNation",
+            "short_name": "GEX"
+        },
+        "default_group": "default",
+        "last_updated": "2026-02-05 15:49:23"
+    }
+]
