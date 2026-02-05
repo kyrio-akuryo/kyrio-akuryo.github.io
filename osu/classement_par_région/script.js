@@ -48,7 +48,6 @@ async function loadRegion(regionName) {
         const response = await fetch(filePath);
         if (!response.ok) throw new Error(`Fichier introuvable (${response.status})`);
         let data = await response.json();
-        console.log(`Données chargées pour ${regionName} :`, data.length, "joueurs trouvés.");
 
         data.sort((a, b) => {
             let rankA = a.global_rank || 999999999;
@@ -56,26 +55,17 @@ async function loadRegion(regionName) {
             return rankA - rankB;
         });
 
-        data.forEach((player, index) => {
-            if (player.global_rank) {
-                player.local_rank = index + 1;
-            }
-
-            else {
-                player.local_rank = "-";
-            }
-        });
-
         currentData = data;
         document.getElementById('home-section').classList.add('hidden');
         document.getElementById('ranking-section').classList.remove('hidden');
         document.getElementById('current-region-title').textContent = `Classement : ${regionName}`;
+        currentSort = { column: 'global_rank', direction: 'asc' };
         renderTable();
     }
 
     catch (error) {
         console.error(error);
-        alert("Erreur : Impossible de charger les données. Vérifiez la console (F12) pour plus de détails.");
+        alert("Erreur de chargement. Vérifiez la console.");
     }
 }
 
@@ -97,7 +87,9 @@ function renderTable() {
     filteredData.forEach(player => {
         try {
             const tr = document.createElement('tr');
-            const regionRankDisplay = player.local_rank !== "-" ? `#${player.local_rank}` : "-";
+            const coverUrl = player.cover_url;
+            const dynamicRank = currentData.indexOf(player) + 1;
+            const rankDisplay = `#${dynamicRank}`;
             const globalRankDisplay = player.global_rank ? `#${player.global_rank.toLocaleString()}` : "-";
             const pp = player.pp ? Math.round(player.pp).toLocaleString() : 0;
             const acc = player.hit_accuracy ? player.hit_accuracy.toFixed(2) + '%' : '0%';
@@ -105,38 +97,34 @@ function renderTable() {
             const level = player.level ? player.level : 0;
             const avatar = player.avatar_url || "https://osu.ppy.sh/images/layout/avatar-guest.png";
             const groupRaw = player.default_group || "default";
-            const groupLower = groupRaw.toLowerCase();
-            const groupClass = `group-${groupLower}`;
-            let groupBadgeHTML = groupLower !== "default" ? `<span class="group-tag ${groupClass}">${groupRaw}</span>` : "";
+            const groupClass = `group-${groupRaw.toLowerCase()}`;
+            let groupBadgeHTML = groupRaw.toLowerCase() !== "default" ? `<span class="group-tag ${groupClass}">${groupRaw}</span>` : "";
             let teamHTML = "-";
 
             if (player.team) {
-                const teamName = player.team.name;
-                const teamFlag = player.team.flag_url;
-
-                if (teamFlag) {
-                    teamHTML = `<div class=\"team-info\"><img src=\"${teamFlag}\" class=\"team-flag\"><span class=\"team-name\">${teamName}</span></div>`;
+                if (player.team.flag_url) {
+                    teamHTML = `<div class=\"team-info\"><img src=\"${player.team.flag_url}\" class=\"team-flag\"><span class=\"team-name\">${player.team.name}</span></div>`;
                 }
 
                 else {
-                    teamHTML = `<span class=\"team-name\">${teamName}</span>`;
+                    teamHTML = `<span class=\"team-name\">${player.team.name}</span>`;
                 }
+            }
+
+            if (coverUrl) {
+                const overlayOpacity = "0.8";
+                const overlayColor = `rgba(0, 0, 0, ${overlayOpacity})`;
+                tr.style.backgroundImage = `linear-gradient(${overlayColor}, ${overlayColor}), url('${coverUrl}')`;
             }
 
             let tooltipHTML = "";
 
             if (player.previous_usernames && player.previous_usernames.length > 0) {
-                const prevNames = player.previous_usernames.join(", ");
-                tooltipHTML = `
-                    <div class="prev-names-tooltip">
-                        <span class="tooltip-title">Anciennement</span>
-                        ${prevNames}
-                    </div>
-                `;
+                tooltipHTML = `<div class="prev-names-tooltip"><span class="tooltip-title">Anciennement</span>${player.previous_usernames.join(", ")}</div>`;
             }
 
             tr.innerHTML = `
-                <td><span class="rank-pill">${regionRankDisplay}</span></td>
+                <td><span class="rank-pill">${rankDisplay}</span></td>
                 <td>
                     <div class="player-info">
                         <img src="${avatar}" alt="" class="avatar" loading="lazy">
