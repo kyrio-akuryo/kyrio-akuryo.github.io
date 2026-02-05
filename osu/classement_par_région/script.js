@@ -101,15 +101,13 @@ function renderTable() {
 
     // Filtrage
     const filteredData = currentData.filter(player => {
-        // Protection si username est vide
         if (!player.username) return false;
         return player.username.toLowerCase().includes(searchTerm);
     });
 
-    console.log("Joueurs à afficher après filtre :", filteredData.length); // Log de vérification
-
+    // Mise à jour du colspan à 7 car on a ajouté une colonne
     if (filteredData.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="6" class="no-result">Aucun joueur trouvé.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="7" class="no-result">Aucun joueur trouvé.</td></tr>';
         return;
     }
 
@@ -117,26 +115,32 @@ function renderTable() {
         try {
             const tr = document.createElement('tr');
 
+            // Préparation des données
             const regionRankDisplay = player.local_rank !== "-" ? `#${player.local_rank}` : "-";
+
+            // Formatage du Rang Mondial
+            const globalRankDisplay = player.global_rank ? `#${player.global_rank.toLocaleString()}` : "-";
+
             const pp = player.pp ? Math.round(player.pp).toLocaleString() : 0;
             const acc = player.hit_accuracy ? player.hit_accuracy.toFixed(2) + '%' : '0%';
             const playcount = player.play_count ? player.play_count.toLocaleString() : 0;
             const level = player.level ? player.level : 0;
-            const avatar = player.avatar_url || "https://osu.ppy.sh/images/layout/avatar-guest.png"; // Image par défaut
+            const avatar = player.avatar_url || "https://osu.ppy.sh/images/layout/avatar-guest.png";
 
             tr.innerHTML = `
                 <td><span class="rank-pill">${regionRankDisplay}</span></td>
+                
                 <td>
                     <div class="player-info">
                         <img src="${avatar}" alt="" class="avatar" loading="lazy">
-                        <div style="display:flex; flex-direction:column;">
-                            <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" style="color:white;text-decoration:none;font-weight:bold;">
-                                ${player.username}
-                            </a>
-                            <span style="font-size:0.8em; color:#888;">Mondial #${player.global_rank ? player.global_rank.toLocaleString() : "?"}</span>
-                        </div>
+                        <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" style="color:white;text-decoration:none;font-weight:bold;">
+                            ${player.username}
+                        </a>
                     </div>
                 </td>
+                
+                <td style="font-weight:bold; color:#aaa;">${globalRankDisplay}</td>
+
                 <td>${pp} pp</td>
                 <td>${acc}</td>
                 <td>${playcount}</td>
@@ -144,7 +148,7 @@ function renderTable() {
             `;
             tbody.appendChild(tr);
         } catch (e) {
-            console.error("Erreur lors de l'affichage d'un joueur :", player, e);
+            console.error("Erreur d'affichage :", e);
         }
     });
 }
