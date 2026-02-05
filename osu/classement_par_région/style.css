@@ -297,6 +297,10 @@ footer {
 }
 
 tbody tr {
+    background-color: var(--card-bg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     border-radius: 8px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -313,7 +317,7 @@ tbody tr td:last-child {
 
 tbody tr:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.6);
     position: relative;
     z-index: 10;
 }
