@@ -77,7 +77,7 @@ main {
 
 .table-container {
     overflow-x: auto;
-    padding: 10px; 
+    padding: 10px;
 }
 
 table {
@@ -341,5 +341,18 @@ tbody tr:hover {
 }
 
 tbody tr.status-inactive:hover {
-    box-shadow: 0 0 0 2px #ffaa00, 0 6px 12px rgba(0,0,0,0.6);
+    box-shadow: 0 0 0 2px #ffaa00, 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.supporter-icon {
+    width: 14px;
+    height: 14px;
+    fill: #ff66aa;
+    margin-left: 6px;
+    vertical-align: middle;
+    transition: transform 0.2s;
+}
+
+tbody tr:hover .supporter-icon {
+    transform: scale(1.2);
 }

@@ -103,7 +103,7 @@
         "avatar_url": "https://a.ppy.sh/10818654?1769876577.jpeg",
         "cover_url": "https://assets.ppy.sh/user-profile-covers/10818654/1c4045571974cc93e5d377f1e7e2a634e1f16562362bc454e2beba3fcfeb2505.png",
         "region": "Hauts-de-France",
-        "is_active": 0,
+        "is_active": 1,
         "is_deleted": 0,
         "has_supported": 1,
         "playstyle": [
