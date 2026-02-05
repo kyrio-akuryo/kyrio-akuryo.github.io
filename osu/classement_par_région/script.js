@@ -117,6 +117,10 @@ function renderTable() {
                 tr.style.backgroundImage = `linear-gradient(${overlayColor}, ${overlayColor}), url('${coverUrl}')`;
             }
 
+            if (player.is_deleted) {
+                tr.classList.add('deleted-player');
+            }
+
             let tooltipHTML = "";
 
             if (player.previous_usernames && player.previous_usernames.length > 0) {
