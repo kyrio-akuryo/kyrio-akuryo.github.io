@@ -60,7 +60,7 @@ async function loadRegion(regionName) {
             if (player.global_rank) {
                 player.local_rank = index + 1;
             }
-            
+
             else {
                 player.local_rank = "-";
             }
@@ -72,7 +72,7 @@ async function loadRegion(regionName) {
         document.getElementById('current-region-title').textContent = `Classement : ${regionName}`;
         renderTable();
     }
-    
+
     catch (error) {
         console.error(error);
         alert("Erreur : Impossible de charger les données. Vérifiez la console (F12) pour plus de détails.");
@@ -82,15 +82,15 @@ async function loadRegion(regionName) {
 function renderTable() {
     const tbody = document.getElementById('table-body');
     if (!tbody) return;
-    tbody.innerHTML = ''; 
+    tbody.innerHTML = '';
 
     const filteredData = currentData.filter(player => {
-        if (!player.username) return false; 
+        if (!player.username) return false;
         return player.username.toLowerCase().includes(searchTerm);
     });
 
     if (filteredData.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="7" class="no-result">Aucun joueur trouvé.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="8" class="no-result">Aucun joueur trouvé.</td></tr>';
         return;
     }
 
@@ -104,13 +104,28 @@ function renderTable() {
             const playcount = player.play_count ? player.play_count.toLocaleString() : 0;
             const level = player.level ? player.level : 0;
             const avatar = player.avatar_url || "https://osu.ppy.sh/images/layout/avatar-guest.png";
-            const groupRaw = player.default_group || "default"; 
+            const groupRaw = player.default_group || "default";
             const groupLower = groupRaw.toLowerCase();
-            const groupClass = `group-${groupLower}`; 
-            let groupBadgeHTML = "";
+            const groupClass = `group-${groupLower}`;
+            let groupBadgeHTML = groupLower !== "default" ? `<span class="group-tag ${groupClass}">${groupRaw}</span>` : "";
+            let teamHTML = "-";
 
-            if (groupLower !== "default") {
-                groupBadgeHTML = `<span class="group-tag ${groupClass}">${groupRaw}</span>`;
+            if (player.team) {
+                const teamName = player.team.name;
+                const teamFlag = player.team.flag_url;
+
+                if (teamFlag) {
+                    teamHTML = `
+                        <div class="team-info">
+                            <img src="${teamFlag}" alt="${teamName}" class="team-flag">
+                            <span class="team-name">${teamName}</span>
+                        </div>
+                    `;
+                }
+                
+                else {
+                    teamHTML = `<span class="team-name">${teamName}</span>`;
+                }
             }
 
             tr.innerHTML = `
@@ -126,6 +141,7 @@ function renderTable() {
                         </div>
                     </div>
                 </td>
+                <td>${teamHTML}</td>
                 <td style="font-weight:bold; color:#aaa;">${globalRankDisplay}</td>
                 <td>${pp} pp</td>
                 <td>${acc}</td>
@@ -145,12 +161,12 @@ function sortTable(column) {
     if (currentSort.column === column) {
         currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
     }
-    
+
     else {
         if (column === 'global_rank') {
             currentSort.direction = 'asc';
         }
-        
+
         else {
             currentSort.direction = 'desc';
         }
