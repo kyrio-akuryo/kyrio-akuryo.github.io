@@ -48,32 +48,28 @@ function showHome() {
 async function loadRegion(regionName) {
     // Reset de la recherche
     searchTerm = "";
-    document.getElementById('search-input').value = "";
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) searchInput.value = "";
 
-    const filePath = `exports_regions/${regionName}.json`;
+    // AJOUT DU TIMESTAMP ANTI-CACHE
+    const filePath = `exports_regions/${regionName}.json?t=${Date.now()}`;
 
     try {
         const response = await fetch(filePath);
-        if (!response.ok) throw new Error("Fichier introuvable");
+        if (!response.ok) throw new Error(`Fichier introuvable (${response.status})`);
 
         let data = await response.json();
+        console.log(`Données chargées pour ${regionName} :`, data.length, "joueurs trouvés."); // Log pour vérifier
 
-        // ---------------------------------------------------------
-        // ETAPE CLE : Calcul du classement régional
-        // ---------------------------------------------------------
-
-        // 1. On trie d'abord par classement mondial (le plus petit est le meilleur)
-        // Les joueurs sans rang (null) sont mis à la fin
+        // Tri par rang mondial
         data.sort((a, b) => {
             let rankA = a.global_rank || 999999999;
             let rankB = b.global_rank || 999999999;
             return rankA - rankB;
         });
 
-        // 2. On attribue le rang régional (1, 2, 3...) de façon fixe
-        // Ainsi, même si on trie par "Précision" plus tard, le #1 restera le #1
+        // Attribution du rang local
         data.forEach((player, index) => {
-            // Si le joueur n'a pas de rang global, on ne lui donne pas de rang régional (optionnel)
             if (player.global_rank) {
                 player.local_rank = index + 1;
             } else {
@@ -88,25 +84,29 @@ async function loadRegion(regionName) {
         document.getElementById('ranking-section').classList.remove('hidden');
         document.getElementById('current-region-title').textContent = `Classement : ${regionName}`;
 
-        // On lance le rendu (le tri initial est déjà fait ci-dessus)
         renderTable();
 
     } catch (error) {
-        alert("Impossible de charger les données...");
         console.error(error);
+        alert("Erreur : Impossible de charger les données. Vérifiez la console (F12) pour plus de détails.");
     }
 }
 
 // --- FONCTION MODIFIÉE : renderTable ---
 function renderTable() {
     const tbody = document.getElementById('table-body');
+    if (!tbody) return;
+
     tbody.innerHTML = '';
 
-    // Filtrage recherche
+    // Filtrage
     const filteredData = currentData.filter(player => {
+        // Protection si username est vide
         if (!player.username) return false;
         return player.username.toLowerCase().includes(searchTerm);
     });
+
+    console.log("Joueurs à afficher après filtre :", filteredData.length); // Log de vérification
 
     if (filteredData.length === 0) {
         tbody.innerHTML = '<tr><td colspan="6" class="no-result">Aucun joueur trouvé.</td></tr>';
@@ -114,42 +114,38 @@ function renderTable() {
     }
 
     filteredData.forEach(player => {
-        const tr = document.createElement('tr');
+        try {
+            const tr = document.createElement('tr');
 
-        // UTILISATION DU RANG REGIONAL CALCULÉ
-        // On affiche #1, #2... ou "-" si pas classé
-        const regionRankDisplay = player.local_rank !== "-" ? `#${player.local_rank}` : "-";
+            const regionRankDisplay = player.local_rank !== "-" ? `#${player.local_rank}` : "-";
+            const pp = player.pp ? Math.round(player.pp).toLocaleString() : 0;
+            const acc = player.hit_accuracy ? player.hit_accuracy.toFixed(2) + '%' : '0%';
+            const playcount = player.play_count ? player.play_count.toLocaleString() : 0;
+            const level = player.level ? player.level : 0;
+            const avatar = player.avatar_url || "https://osu.ppy.sh/images/layout/avatar-guest.png"; // Image par défaut
 
-        // On garde le rang global en info-bulle (title) ou petit texte si besoin
-        // Ici je l'ajoute juste en "title" au survol de la pilule
-        const globalRankTooltip = player.global_rank ? `Mondial: #${player.global_rank.toLocaleString()}` : "Non classé";
-
-        const pp = player.pp ? Math.round(player.pp).toLocaleString() : 0;
-        const acc = player.hit_accuracy ? player.hit_accuracy.toFixed(2) + '%' : '0%';
-        const playcount = player.play_count ? player.play_count.toLocaleString() : 0;
-        const level = player.level ? player.level : 0;
-
-        tr.innerHTML = `
-            <td>
-                <span class="rank-pill" title="${globalRankTooltip}">${regionRankDisplay}</span>
-            </td>
-            <td>
-                <div class="player-info">
-                    <img src="${player.avatar_url}" alt="" class="avatar" loading="lazy">
-                    <div style="display:flex; flex-direction:column;">
-                        <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" style="color:white;text-decoration:none;font-weight:bold;">
-                            ${player.username}
-                        </a>
-                        <span style="font-size:0.8em; color:#888;">Mondial #${player.global_rank ? player.global_rank.toLocaleString() : "?"}</span>
+            tr.innerHTML = `
+                <td><span class="rank-pill">${regionRankDisplay}</span></td>
+                <td>
+                    <div class="player-info">
+                        <img src="${avatar}" alt="" class="avatar" loading="lazy">
+                        <div style="display:flex; flex-direction:column;">
+                            <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" style="color:white;text-decoration:none;font-weight:bold;">
+                                ${player.username}
+                            </a>
+                            <span style="font-size:0.8em; color:#888;">Mondial #${player.global_rank ? player.global_rank.toLocaleString() : "?"}</span>
+                        </div>
                     </div>
-                </div>
-            </td>
-            <td>${pp} pp</td>
-            <td>${acc}</td>
-            <td>${playcount}</td>
-            <td>Lvl ${level}</td>
-        `;
-        tbody.appendChild(tr);
+                </td>
+                <td>${pp} pp</td>
+                <td>${acc}</td>
+                <td>${playcount}</td>
+                <td>Lvl ${level}</td>
+            `;
+            tbody.appendChild(tr);
+        } catch (e) {
+            console.error("Erreur lors de l'affichage d'un joueur :", player, e);
+        }
     });
 }
 
