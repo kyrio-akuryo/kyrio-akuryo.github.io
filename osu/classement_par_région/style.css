@@ -214,3 +214,12 @@ footer {
 .group-unknown {
     color: #ffffff;
 }
+
+.group-tag {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 2px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}

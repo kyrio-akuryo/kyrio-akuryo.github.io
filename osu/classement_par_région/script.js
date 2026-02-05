@@ -82,10 +82,10 @@ async function loadRegion(regionName) {
 function renderTable() {
     const tbody = document.getElementById('table-body');
     if (!tbody) return;
-    tbody.innerHTML = '';
+    tbody.innerHTML = ''; 
 
     const filteredData = currentData.filter(player => {
-        if (!player.username) return false;
+        if (!player.username) return false; 
         return player.username.toLowerCase().includes(searchTerm);
     });
 
@@ -104,18 +104,26 @@ function renderTable() {
             const playcount = player.play_count ? player.play_count.toLocaleString() : 0;
             const level = player.level ? player.level : 0;
             const avatar = player.avatar_url || "https://osu.ppy.sh/images/layout/avatar-guest.png";
-            const groupRaw = player.default_group || "default";
-            const groupClass = `group-${groupRaw.toLowerCase()}`;
+            const groupRaw = player.default_group || "default"; 
+            const groupLower = groupRaw.toLowerCase();
+            const groupClass = `group-${groupLower}`; 
+            let groupBadgeHTML = "";
+
+            if (groupLower !== "default") {
+                groupBadgeHTML = `<span class="group-tag ${groupClass}">${groupRaw}</span>`;
+            }
+
             tr.innerHTML = `
                 <td><span class="rank-pill">${regionRankDisplay}</span></td>
                 <td>
                     <div class="player-info">
                         <img src="${avatar}" alt="" class="avatar" loading="lazy">
-                        
-                        <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="player-link ${groupClass}">
-                            ${player.username}
-                        </a>
-
+                        <div style="display:flex; flex-direction:column;">
+                            <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="player-link ${groupClass}">
+                                ${player.username}
+                            </a>
+                            ${groupBadgeHTML}
+                        </div>
                     </div>
                 </td>
                 <td style="font-weight:bold; color:#aaa;">${globalRankDisplay}</td>
@@ -126,7 +134,7 @@ function renderTable() {
             `;
             tbody.appendChild(tr);
         }
-
+        
         catch (e) {
             console.error("Erreur d'affichage :", e);
         }
