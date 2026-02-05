@@ -49,6 +49,54 @@
         "last_updated": "2026-02-05 16:12:12"
     },
     {
+        "id": 10660738,
+        "username": "Ganondorf",
+        "previous_usernames": [
+            "Green Mister L"
+        ],
+        "avatar_url": "https://a.ppy.sh/10660738?1759700813.jpeg",
+        "cover_url": "https://assets.ppy.sh/user-profile-covers/10660738/d46ea03c3f2078b5ca1a4df78061bb32cf1ac1134f60fba346cc482231c1737d.jpeg",
+        "region": "Hauts-de-France",
+        "is_active": 1,
+        "is_deleted": 0,
+        "has_supported": 1,
+        "playstyle": [
+            "keyboard"
+        ],
+        "rank_highest": 27798,
+        "follower_count": 1263,
+        "count_100": 2684561,
+        "count_300": 46605169,
+        "count_50": 344412,
+        "level": 103.0,
+        "global_rank": 57747,
+        "global_rank_percent": 1826.0,
+        "pp": 6033.3,
+        "ranked_score": 298826360969,
+        "hit_accuracy": 98.8545,
+        "play_count": 172338,
+        "play_time": 13478712,
+        "total_score": 347400444089,
+        "maximum_combo": 10199,
+        "replays_watched_by_others": 16219,
+        "grade_counts": {
+            "ss": 783,
+            "ssh": 21561,
+            "s": 5142,
+            "sh": 33585,
+            "a": 35233
+        },
+        "country_rank": 1826,
+        "team": {
+            "flag_url": "https://assets.ppy.sh/teams/flag/18/40b35508023d1fb915607465979799d3080d5a274d99de3504bc0bd0cfa3d5c2.jpeg",
+            "id": 18,
+            "name": "The Method",
+            "short_name": "SCOR"
+        },
+        "default_group": "gmt",
+        "last_updated": "2026-02-05 16:38:37"
+    },
+    {
         "id": 10818654,
         "username": "Kyrio",
         "previous_usernames": [
