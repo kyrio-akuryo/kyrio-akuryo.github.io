@@ -30,7 +30,7 @@
         "play_time": 5860688,
         "total_score": 460164807603,
         "maximum_combo": 7426,
-        "replays_watched_by_others": 170179,
+        "replays_watched_by_others": 170180,
         "grade_counts": {
             "ss": 76,
             "ssh": 15,
@@ -41,12 +41,10 @@
         "country_rank": 45,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/188/52f09c121ab476c8eea2aa338f73b59755b1b3a0faea9256939fc7a3eab6beec.png",
-            "id": 188,
-            "name": "osufrlive",
-            "short_name": "FR"
+            "name": "osufrlive"
         },
         "default_group": "dev",
-        "last_updated": "2026-02-05 16:12:12"
+        "last_updated": "2026-02-05 16:57:42"
     },
     {
         "id": 10660738,
@@ -89,12 +87,10 @@
         "country_rank": 1826,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/18/40b35508023d1fb915607465979799d3080d5a274d99de3504bc0bd0cfa3d5c2.jpeg",
-            "id": 18,
-            "name": "The Method",
-            "short_name": "SCOR"
+            "name": "The Method"
         },
         "default_group": "gmt",
-        "last_updated": "2026-02-05 16:38:37"
+        "last_updated": "2026-02-05 16:57:44"
     },
     {
         "id": 10818654,
@@ -141,12 +137,10 @@
         "country_rank": 1235,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/18/40b35508023d1fb915607465979799d3080d5a274d99de3504bc0bd0cfa3d5c2.jpeg",
-            "id": 18,
-            "name": "The Method",
-            "short_name": "SCOR"
+            "name": "The Method"
         },
         "default_group": "default",
-        "last_updated": "2026-02-05 15:41:27"
+        "last_updated": "2026-02-05 16:57:45"
     },
     {
         "id": 13080423,

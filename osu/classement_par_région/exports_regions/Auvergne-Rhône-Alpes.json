@@ -17,8 +17,8 @@
         ],
         "rank_highest": 320,
         "follower_count": 447,
-        "count_100": 5101196,
-        "count_300": 83277704,
+        "count_100": 5101200,
+        "count_300": 83277779,
         "count_50": 494923,
         "level": 110.0,
         "global_rank": 521,
@@ -26,9 +26,9 @@
         "pp": 15237.7,
         "ranked_score": 110953592817,
         "hit_accuracy": 97.6474,
-        "play_count": 337930,
-        "play_time": 16132698,
-        "total_score": 1069113409132,
+        "play_count": 337931,
+        "play_time": 16132746,
+        "total_score": 1069114927985,
         "maximum_combo": 8253,
         "replays_watched_by_others": 2123,
         "grade_counts": {
@@ -41,11 +41,9 @@
         "country_rank": 15,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/13487/002d327cd03e703e556337eb8b2c3d959dc5aba6c4c4b00febd683562a218857.jpeg",
-            "id": 13487,
-            "name": "YuriNation",
-            "short_name": "GEX"
+            "name": "YuriNation"
         },
         "default_group": "default",
-        "last_updated": "2026-02-05 15:49:23"
+        "last_updated": "2026-02-05 16:57:48"
     }
 ]
