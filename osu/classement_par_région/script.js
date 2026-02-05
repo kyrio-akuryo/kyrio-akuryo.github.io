@@ -117,6 +117,14 @@ function renderTable() {
                 tr.style.backgroundImage = `linear-gradient(${overlayColor}, ${overlayColor}), url('${coverUrl}')`;
             }
 
+            if (player.is_active) {
+                tr.classList.add('status-active');
+            }
+            
+            else {
+                tr.classList.add('status-inactive');
+            }
+
             if (player.is_deleted) {
                 tr.classList.add('deleted-player');
             }

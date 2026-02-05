@@ -332,3 +332,11 @@ tbody tr:hover {
     filter: grayscale(0%);
     opacity: 0.9;
 }
+
+.status-active {
+    border: 2px solid #55ff55;
+}
+
+.status-inactive {
+    border: 2px solid #ffaa00;
+}
