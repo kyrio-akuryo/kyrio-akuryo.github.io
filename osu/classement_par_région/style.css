@@ -511,6 +511,13 @@ tbody tr:nth-child(3) .rank-pill {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+td:nth-child(2),
+td:nth-child(4),
+td:nth-child(5),
+td:nth-child(14) {
+    overflow: visible !important;
+}
+
 th:nth-child(1),
 td:nth-child(1) {
     width: 3%;
@@ -519,25 +526,19 @@ td:nth-child(1) {
 
 th:nth-child(2),
 td:nth-child(2) {
-    width: 16%;
-}
-
-td:nth-child(2),
-td:nth-child(4),
-td:nth-child(5),
-td:nth-child(14) {
-    overflow: visible !important;
+    width: 17%;
 }
 
 th:nth-child(3),
 td:nth-child(3) {
     width: 8%;
     white-space: normal !important;
+    overflow: hidden;
 }
 
 th:nth-child(4),
 td:nth-child(4) {
-    width: 7%;
+    width: 6%;
     text-align: center;
 }
 
@@ -553,7 +554,7 @@ td:nth-child(6) {
 
 th:nth-child(7),
 td:nth-child(7) {
-    width: 5%;
+    width: 6%;
     color: var(--accent);
     font-weight: bold;
 }
@@ -581,22 +582,20 @@ td:nth-child(11) {
 th:nth-child(12),
 td:nth-child(12) {
     width: 10%;
-    font-size: 0.8rem;
-    opacity: 0.8;
+    font-size: 0.75rem;
+    opacity: 0.9;
 }
 
 th:nth-child(13),
 td:nth-child(13) {
     width: 10%;
-    font-size: 0.8rem;
-    opacity: 0.8;
+    font-size: 0.75rem;
+    opacity: 0.9;
 }
 
 th:nth-child(14),
 td:nth-child(14) {
-    width: 5%;
-    display: flex;
-    justify-content: center;
+    width: 11%;
 }
 
 footer {
