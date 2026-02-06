@@ -293,6 +293,8 @@ thead th:hover {
 tbody tr {
     background-color: var(--card-bg);
     transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    height: 48px;
+    max-height: 48px;
     background-size: cover;
     background-position: center;
 }
@@ -314,6 +316,10 @@ td {
     overflow: visible;
     text-overflow: clip;
     position: relative;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 0 6px;
+    vertical-align: middle;
 }
 
 tbody tr td:first-child {
@@ -600,4 +606,14 @@ footer {
     cursor: help;
     position: relative;
     margin: 0 1px;
+}
+
+.supporter-icon {
+    width: 14px;
+    height: 14px;
+    fill: var(--accent);
+    color: var(--accent);
+    vertical-align: middle;
+    margin-top: -2px;
+    filter: drop-shadow(0 0 5px rgba(255, 102, 170, 0.4));
 }
