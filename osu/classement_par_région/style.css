@@ -536,16 +536,25 @@ nav select option {
 
 th:nth-child(2),
 td:nth-child(2) {
-    min-width: 160px;
-    max-width: 250px;
+    min-width: 230px;
+    max-width: none;
 }
 
 th:nth-child(3),
-td:nth-child(3),
-th:nth-child(4),
-td:nth-child(4) {
-    min-width: auto;
-    width: auto;
+td:nth-child(3) {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+th:nth-child(9),
+td:nth-child(9),
+th:nth-child(10),
+td:nth-child(10) {
+    max-width: 85px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 td {
