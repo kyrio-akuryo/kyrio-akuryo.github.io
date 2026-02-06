@@ -110,14 +110,16 @@ function renderTable() {
             let teamHTML = "-";
             let supporterHTML = "";
 
-            if (player.playstyle && Array.isArray(player.playstyle)) {
+            if (player.playstyle && Array.isArray(player.playstyle) && player.playstyle.length > 0) {
                 player.playstyle.forEach(style => {
-                    if (ICONS[style]) {
-                        playstyleHTML += ICONS[style];
+                    const formattedStyle = style.charAt(0).toUpperCase() + style.slice(1).toLowerCase();
+
+                    if (ICONS[formattedStyle]) {
+                        playstyleHTML += ICONS[formattedStyle];
                     }
                 });
             }
-
+            
             else {
                 playstyleHTML += "-";
             }
