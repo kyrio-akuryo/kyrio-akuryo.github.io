@@ -324,7 +324,9 @@ footer {
     border-radius: 6px;
     border: 1px solid #555;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-    min-width: 150px;
+    min-width: auto;
+    width: max-content;
+    max-width: 250px;
     text-align: left;
     position: absolute;
     bottom: 100%;
