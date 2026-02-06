@@ -115,8 +115,10 @@ main {
 }
 
 .table-container {
+    width: 100%;
     overflow-x: auto;
-    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) #333;
 }
 
 table {
@@ -529,24 +531,29 @@ nav select option {
 }
 
 .container {
-    max-width: 1600px;
-    width: 95%;
+    width: 95vw !important;
+    max-width: 1800px !important;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 th:nth-child(2),
 td:nth-child(2) {
-    min-width: 250px;
+    min-width: 200px;
 }
 
 th:nth-child(3),
 td:nth-child(3),
 th:nth-child(4),
 td:nth-child(4) {
-    min-width: 100px;
+    min-width: 80px;
 }
 
 td {
     white-space: nowrap;
+}
+
+body,
+html {
+    overflow-x: hidden;
 }
