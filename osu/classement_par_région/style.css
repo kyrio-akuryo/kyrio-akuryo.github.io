@@ -441,6 +441,7 @@ nav select option {
     position: relative;
     display: inline-flex;
     justify-content: center;
+    cursor: help;
 }
 
 .playstyle-tooltip {
@@ -556,4 +557,70 @@ td {
 body,
 html {
     overflow-x: hidden;
+}
+
+.pie-chart-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: help;
+}
+
+.pie-chart {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s;
+}
+
+.pie-chart-container:hover .pie-chart {
+    transform: scale(1.2);
+}
+
+.pie-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #222;
+    color: #fff;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    text-align: left;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 135%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    transition: opacity 0.2s;
+    pointer-events: none;
+}
+
+.pie-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+}
+
+.pie-chart-container:hover .pie-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.legend-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
 }

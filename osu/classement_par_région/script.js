@@ -94,7 +94,7 @@ function renderTable() {
     });
 
     if (filteredData.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="9" class="no-result">Aucun joueur trouvé.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="11" class="no-result">Aucun joueur trouvé.</td></tr>';
         return;
     }
 
@@ -113,11 +113,43 @@ function renderTable() {
             const groupRaw = player.default_group || "default";
             const groupClass = `group-${groupRaw.toLowerCase()}`;
             const followers = player.follower_count ? player.follower_count.toLocaleString() : 0;
+            const c300 = player.count_300 || 0;
+            const c100 = player.count_100 || 0;
+            const c50 = player.count_50 || 0;
+            const totalHits = c300 + c100 + c50;
             let globalRankHTML = globalRankDisplay;
             let playstyleHTML = '<div class="playstyle-container">';
             let groupBadgeHTML = groupRaw.toLowerCase() !== "default" ? `<span class="group-tag ${groupClass}">${groupRaw}</span>` : "";
             let teamHTML = "-";
             let supporterHTML = "";
+            let pieChartHTML = "-";
+
+            if (totalHits > 0) {
+                const p300 = (c300 / totalHits) * 100;
+                const p100 = (c100 / totalHits) * 100;
+                const p50 = (c50 / totalHits) * 100;
+                const stop1 = p300;
+                const stop2 = p300 + p100;
+                const color300 = "#55ccff";
+                const color100 = "#88ff55";
+                const color50 = "#ffcc55";
+                const gradientStyle = `conic-gradient(
+                    ${color300} 0% ${stop1}%, 
+                    ${color100} ${stop1}% ${stop2}%, 
+                    ${color50} ${stop2}% 100%
+                )`;
+
+                pieChartHTML = `
+                    <div class="pie-chart-container">
+                        <div class="pie-chart" style="background: ${gradientStyle};"></div>
+                        <div class="pie-tooltip">
+                            <div style="margin-bottom:2px;"><span class="legend-dot" style="background:${color300}"></span>300 : <b>${c300.toLocaleString()}</b></div>
+                            <div style="margin-bottom:2px;"><span class="legend-dot" style="background:${color100}"></span>100 : <b>${c100.toLocaleString()}</b></div>
+                            <div><span class="legend-dot" style="background:${color50}"></span>50 : <b>${c50.toLocaleString()}</b></div>
+                        </div>
+                    </div>
+                `;
+            }
 
             if (player.rank_highest) {
                 const bestRank = `#${player.rank_highest.toLocaleString()}`;
@@ -218,6 +250,7 @@ function renderTable() {
                 <td>Lvl ${level || 0}</td>
                 <td>${playcount ? player.play_count.toLocaleString() : 0}</td>
                 <td>${followers}</td>
+                <td>${pieChartHTML}</td>
             `;
 
             tbody.appendChild(tr);
