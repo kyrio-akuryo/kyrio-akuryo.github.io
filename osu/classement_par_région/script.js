@@ -115,11 +115,16 @@ function renderTable() {
                     const formattedStyle = style.charAt(0).toUpperCase() + style.slice(1).toLowerCase();
 
                     if (ICONS[formattedStyle]) {
-                        playstyleHTML += ICONS[formattedStyle];
+                        playstyleHTML += `
+                            <div class="playstyle-icon-box">
+                                ${ICONS[formattedStyle]}
+                                <span class="playstyle-tooltip">${formattedStyle}</span>
+                            </div>
+                        `;
                     }
                 });
             }
-            
+
             else {
                 playstyleHTML += "-";
             }
