@@ -123,6 +123,7 @@ main {
 
 table {
     width: 100%;
+    table-layout: fixed;
     border-collapse: separate;
     border-spacing: 0 8px;
     background: transparent;
@@ -130,9 +131,10 @@ table {
 
 th,
 td {
-    padding: 15px;
+    padding: 10px 6px;
     text-align: left;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #333;
+    font-size: 0.9rem;
 }
 
 th {
@@ -264,20 +266,25 @@ footer {
 .team-info {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 
 .team-flag {
-    width: 25px;
-    height: 18px;
-    border-radius: 3px;
+    width: 45px;
+    height: auto;
+    border-radius: 4px;
     object-fit: cover;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
 }
 
 .team-name {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #ddd;
+    line-height: 1.2;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .name-container {
@@ -534,31 +541,67 @@ nav select option {
     padding: 10px;
 }
 
+th:nth-child(1),
+td:nth-child(1) {
+    width: 4%;
+}
+
 th:nth-child(2),
 td:nth-child(2) {
-    min-width: 230px;
-    max-width: none;
+    width: 22%;
 }
 
 th:nth-child(3),
 td:nth-child(3) {
-    max-width: 100px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    width: 12%;
+    white-space: normal !important;
+    vertical-align: middle;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 5%;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+    width: 7%;
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+    width: 7%;
+}
+
+th:nth-child(7),
+td:nth-child(7) {
+    width: 6%;
+}
+
+th:nth-child(8),
+td:nth-child(8) {
+    width: 5%;
 }
 
 th:nth-child(9),
-td:nth-child(9),
+td:nth-child(9) {
+    width: 7%;
+}
+
 th:nth-child(10),
 td:nth-child(10) {
-    max-width: 85px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    width: 7%;
+}
+
+th:nth-child(11),
+td:nth-child(11) {
+    width: 9%;
 }
 
 td {
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 body,
@@ -630,12 +673,4 @@ html {
     height: 8px;
     border-radius: 50%;
     margin-right: 6px;
-}
-
-th,
-td {
-    padding: 10px 6px;
-    text-align: left;
-    border-bottom: 1px solid #333;
-    font-size: 0.9rem;
 }
