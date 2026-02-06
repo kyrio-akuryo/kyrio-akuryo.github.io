@@ -94,7 +94,7 @@ function renderTable() {
     });
 
     if (filteredData.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="11" class="no-result">Aucun joueur trouvé.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="12" class="no-result">Aucun joueur trouvé.</td></tr>';
         return;
     }
 
@@ -258,6 +258,7 @@ function renderTable() {
                 <td>${teamHTML || '-'}</td>
                 <td>${playstyleHTML}</td>
                 <td style="font-weight:bold; color:#aaa;">${globalRankHTML}</td>
+                <td style="font-weight:bold; color:#aaa;">${player.country_rank ? '#' + player.country_rank.toLocaleString() : '-'}</td>
                 <td>${pp ? Math.round(player.pp).toLocaleString() : 0} pp</td>
                 <td>${acc ? player.hit_accuracy.toFixed(2) : 0}%</td>
                 <td>Lvl ${level || 0}</td>
