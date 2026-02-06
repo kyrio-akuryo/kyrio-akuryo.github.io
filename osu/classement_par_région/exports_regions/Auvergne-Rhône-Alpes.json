@@ -17,18 +17,18 @@
         ],
         "rank_highest": 320,
         "follower_count": 447,
-        "count_100": 5101200,
-        "count_300": 83277779,
-        "count_50": 494923,
+        "count_100": 5101685,
+        "count_300": 83284991,
+        "count_50": 494964,
         "level": 110.0,
         "global_rank": 521,
         "global_rank_percent": 15.0,
         "pp": 15237.7,
-        "ranked_score": 110953592817,
+        "ranked_score": 111005563208,
         "hit_accuracy": 97.6474,
-        "play_count": 337931,
-        "play_time": 16132746,
-        "total_score": 1069114927985,
+        "play_count": 337946,
+        "play_time": 16134127,
+        "total_score": 1069329961969,
         "maximum_combo": 8253,
         "replays_watched_by_others": 2123,
         "grade_counts": {
@@ -36,7 +36,7 @@
             "ssh": 64,
             "s": 733,
             "sh": 1177,
-            "a": 3828
+            "a": 3829
         },
         "country_rank": 15,
         "team": {
@@ -44,6 +44,6 @@
             "name": "YuriNation"
         },
         "default_group": "default",
-        "last_updated": "2026-02-05 16:57:48"
+        "last_updated": "2026-02-06 08:59:27"
     }
 ]
