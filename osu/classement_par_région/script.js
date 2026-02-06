@@ -112,6 +112,7 @@ function renderTable() {
             const avatar = player.avatar_url || "https://osu.ppy.sh/images/layout/avatar-guest.png";
             const groupRaw = player.default_group || "default";
             const groupClass = `group-${groupRaw.toLowerCase()}`;
+            const followers = player.follower_count ? player.follower_count.toLocaleString() : 0;
             let globalRankHTML = globalRankDisplay;
             let playstyleHTML = '<div class="playstyle-container">';
             let groupBadgeHTML = groupRaw.toLowerCase() !== "default" ? `<span class="group-tag ${groupClass}">${groupRaw}</span>` : "";
@@ -214,8 +215,9 @@ function renderTable() {
                 <td style="font-weight:bold; color:#aaa;">${globalRankHTML}</td>
                 <td>${pp ? Math.round(player.pp).toLocaleString() : 0} pp</td>
                 <td>${acc ? player.hit_accuracy.toFixed(2) : 0}%</td>
-                <td>${playcount ? player.play_count.toLocaleString() : 0}</td>
                 <td>Lvl ${level || 0}</td>
+                <td>${playcount ? player.play_count.toLocaleString() : 0}</td>
+                <td>${followers}</td>
             `;
 
             tbody.appendChild(tr);
