@@ -307,42 +307,40 @@ footer {
 
 .name-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    cursor: help;
 }
 
 .prev-names-tooltip {
     visibility: hidden;
     opacity: 0;
-    width: max-content;
-    max-width: 250px;
     background-color: #222;
-    color: #eee;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 12px;
-    position: absolute;
-    z-index: 100;
-    bottom: 125%;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: opacity 0.3s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
     font-size: 0.8rem;
-    font-weight: normal;
-    line-height: 1.4;
-    border: 1px solid #444;
-    white-space: normal;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    min-width: 150px;
+    text-align: left;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    margin-bottom: 10px;
+    z-index: 1000;
+    transition: opacity 0.2s;
+    pointer-events: none;
 }
 
 .prev-names-tooltip::after {
     content: "";
     position: absolute;
     top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
+    left: 20px;
+    border-width: 6px;
     border-style: solid;
     border-color: #222 transparent transparent transparent;
 }

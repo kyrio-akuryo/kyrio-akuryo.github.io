@@ -230,7 +230,12 @@ function renderTable() {
             let tooltipHTML = "";
 
             if (player.previous_usernames && player.previous_usernames.length > 0) {
-                tooltipHTML = `<div class="prev-names-tooltip"><span class="tooltip-title">Anciennement</span>${player.previous_usernames.join(", ")}</div>`;
+                tooltipHTML = `
+                    <div class="prev-names-tooltip">
+                        <div style="color:#aaa; font-size:0.7em; text-transform:uppercase; margin-bottom:4px;">Anciennement :</div>
+                        ${player.previous_usernames.join("<br>")}
+                    </div>
+                `;
             }
 
             tr.innerHTML = `
