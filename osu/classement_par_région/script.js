@@ -13,6 +13,13 @@ const ICONS = {
     "Touch": `<svg class="style-icon" viewBox="0 0 24 24"><path d="M9 11.24V7.5C9 6.12 10.12 5 11.5 5S14 6.12 14 7.5v3.74c1.21-.81 2-2.18 2-3.74C16 5.01 13.99 3 11.5 3S7 5.01 7 7.5c0 1.56.79 2.93 2 3.74zm9.84 4.63l-2.54-.63c-.46-.11-1.01.14-1.18.59l-.47 1.27-3.23-1.64V7.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v6.5l-2.61-1.6c-.36-.22-.81-.16-1.11.14l-1.02.99 4.69 4.69c.57.57 1.34.88 2.15.88h6.29c1.03 0 1.89-.78 1.99-1.8l.33-3.26c.07-.63-.25-1.25-.79-1.39z"/></svg>`
 };
 
+const PLAYSTYLE_FR = {
+    "Mouse": "Souris",
+    "Keyboard": "Clavier",
+    "Tablet": "Tablette",
+    "Touch": "Tactile"
+};
+
 let currentData = [];
 let currentSort = { column: 'global_rank', direction: 'asc' };
 let searchTerm = "";
@@ -115,10 +122,12 @@ function renderTable() {
                     const formattedStyle = style.charAt(0).toUpperCase() + style.slice(1).toLowerCase();
 
                     if (ICONS[formattedStyle]) {
+                        const frenchName = PLAYSTYLE_FR[formattedStyle] || formattedStyle;
+
                         playstyleHTML += `
                             <div class="playstyle-icon-box">
                                 ${ICONS[formattedStyle]}
-                                <span class="playstyle-tooltip">${formattedStyle}</span>
+                                <span class="playstyle-tooltip">${frenchName}</span>
                             </div>
                         `;
                     }
