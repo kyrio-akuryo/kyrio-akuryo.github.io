@@ -151,16 +151,12 @@ tr:hover {
 }
 
 .player-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 36px;
+    height: 36px;
 }
 
 .rank-pill {
@@ -540,14 +536,16 @@ nav select option {
 
 th:nth-child(2),
 td:nth-child(2) {
-    min-width: 200px;
+    min-width: 160px;
+    max-width: 250px;
 }
 
 th:nth-child(3),
 td:nth-child(3),
 th:nth-child(4),
 td:nth-child(4) {
-    min-width: 80px;
+    min-width: auto;
+    width: auto;
 }
 
 td {
@@ -623,4 +621,12 @@ html {
     height: 8px;
     border-radius: 50%;
     margin-right: 6px;
+}
+
+th,
+td {
+    padding: 10px 6px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+    font-size: 0.9rem;
 }
