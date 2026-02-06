@@ -1875,50 +1875,6 @@
         "last_updated": "2026-02-06 08:57:12"
     },
     {
-        "id": 9449961,
-        "username": "Chiakemi",
-        "previous_usernames": [
-            "AEZE27"
-        ],
-        "avatar_url": "https://a.ppy.sh/9449961?1508093936.jpg",
-        "cover_url": "https://assets.ppy.sh/user-profile-covers/9449961/d8991407ccd59c3a5269875a9b53ba91c60bbe0c90b5fa39d2c7ac9cab5466e0.jpeg",
-        "region": "Hauts-de-France",
-        "is_active": 1,
-        "is_deleted": 0,
-        "has_supported": 1,
-        "playstyle": [
-            "mouse",
-            "keyboard"
-        ],
-        "rank_highest": 1705,
-        "follower_count": 201,
-        "count_100": 1585384,
-        "count_300": 24648496,
-        "count_50": 147954,
-        "level": 102.0,
-        "global_rank": 7065,
-        "global_rank_percent": 4.0,
-        "pp": 10035.6,
-        "ranked_score": 54677619883,
-        "hit_accuracy": 99.318,
-        "play_count": 120578,
-        "play_time": 6653305,
-        "total_score": 305630797336,
-        "maximum_combo": 5870,
-        "replays_watched_by_others": 2657,
-        "grade_counts": {
-            "ss": 40,
-            "ssh": 39,
-            "s": 1301,
-            "sh": 416,
-            "a": 2001
-        },
-        "country_rank": 4,
-        "team": null,
-        "default_group": "default",
-        "last_updated": "2026-02-06 08:56:01"
-    },
-    {
         "id": 10262231,
         "username": "PandaPasBo",
         "previous_usernames": [
