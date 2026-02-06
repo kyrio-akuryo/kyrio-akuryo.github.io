@@ -130,9 +130,11 @@ function renderTable() {
                 const p50 = (c50 / totalHits) * 100;
                 const stop1 = p300;
                 const stop2 = p300 + p100;
+
                 const color300 = "#55ccff";
                 const color100 = "#88ff55";
                 const color50 = "#ffcc55";
+
                 const gradientStyle = `conic-gradient(
                     ${color300} 0% ${stop1}%, 
                     ${color100} ${stop1}% ${stop2}%, 
@@ -143,9 +145,15 @@ function renderTable() {
                     <div class="pie-chart-container">
                         <div class="pie-chart" style="background: ${gradientStyle};"></div>
                         <div class="pie-tooltip">
-                            <div style="margin-bottom:2px;"><span class="legend-dot" style="background:${color300}"></span>300 : <b>${c300.toLocaleString()}</b></div>
-                            <div style="margin-bottom:2px;"><span class="legend-dot" style="background:${color100}"></span>100 : <b>${c100.toLocaleString()}</b></div>
-                            <div><span class="legend-dot" style="background:${color50}"></span>50 : <b>${c50.toLocaleString()}</b></div>
+                            <div style="margin-bottom:2px;">
+                                <span class="legend-dot" style="background:${color300}"></span>300 : <b>${p300.toFixed(2)}%</b>
+                            </div>
+                            <div style="margin-bottom:2px;">
+                                <span class="legend-dot" style="background:${color100}"></span>100 : <b>${p100.toFixed(2)}%</b>
+                            </div>
+                            <div>
+                                <span class="legend-dot" style="background:${color50}"></span>50 : <b>${p50.toFixed(2)}%</b>
+                            </div>
                         </div>
                     </div>
                 `;
