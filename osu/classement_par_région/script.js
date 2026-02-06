@@ -112,10 +112,24 @@ function renderTable() {
             const avatar = player.avatar_url || "https://osu.ppy.sh/images/layout/avatar-guest.png";
             const groupRaw = player.default_group || "default";
             const groupClass = `group-${groupRaw.toLowerCase()}`;
+            let globalRankHTML = globalRankDisplay;
             let playstyleHTML = '<div class="playstyle-container">';
             let groupBadgeHTML = groupRaw.toLowerCase() !== "default" ? `<span class="group-tag ${groupClass}">${groupRaw}</span>` : "";
             let teamHTML = "-";
             let supporterHTML = "";
+
+            if (player.rank_highest) {
+                const bestRank = `#${player.rank_highest.toLocaleString()}`;
+                globalRankHTML = `
+                    <div class="rank-container">
+                        ${globalRankDisplay}
+                        <div class="rank-tooltip">
+                            <span class="rank-peak-label">Meilleur (Peak)</span>
+                            ${bestRank}
+                        </div>
+                    </div>
+                `;
+            }
 
             if (player.playstyle && Array.isArray(player.playstyle) && player.playstyle.length > 0) {
                 player.playstyle.forEach(style => {
@@ -181,7 +195,7 @@ function renderTable() {
             tr.innerHTML = `
                 <td><span class="rank-pill">${rankDisplay}</span></td>
                 <td>
-                    <div class="player-info">
+                   <div class="player-info">
                         <img src="${avatar}" alt="" class="avatar" loading="lazy">
                         <div style="display:flex; flex-direction:column;">
                             <div class="name-container">
@@ -197,7 +211,7 @@ function renderTable() {
                 </td>
                 <td>${teamHTML || '-'}</td>
                 <td>${playstyleHTML}</td>
-                <td style="font-weight:bold; color:#aaa;">${globalRankDisplay}</td>
+                <td style="font-weight:bold; color:#aaa;">${globalRankHTML}</td>
                 <td>${pp ? Math.round(player.pp).toLocaleString() : 0} pp</td>
                 <td>${acc ? player.hit_accuracy.toFixed(2) : 0}%</td>
                 <td>${playcount ? player.play_count.toLocaleString() : 0}</td>
