@@ -94,7 +94,7 @@ function renderTable() {
     });
 
     if (filteredData.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="12" class="no-result">Aucun joueur trouvé.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="14" class="no-result">Aucun joueur trouvé.</td></tr>';
         return;
     }
 
@@ -117,6 +117,8 @@ function renderTable() {
             const c100 = player.count_100 || 0;
             const c50 = player.count_50 || 0;
             const totalHits = c300 + c100 + c50;
+            const rScore = player.ranked_score ? player.ranked_score.toLocaleString() : 0;
+            const tScore = player.total_score ? player.total_score.toLocaleString() : 0;
             let globalRankHTML = globalRankDisplay;
             let playstyleHTML = '<div class="playstyle-container">';
             let groupBadgeHTML = groupRaw.toLowerCase() !== "default" ? `<span class="group-tag ${groupClass}">${groupRaw}</span>` : "";
@@ -264,6 +266,8 @@ function renderTable() {
                 <td>Lvl ${level || 0}</td>
                 <td>${playcount ? player.play_count.toLocaleString() : 0}</td>
                 <td>${followers}</td>
+                <td style="font-size: 0.85rem;">${rScore}</td>
+                <td style="font-size: 0.85rem;">${tScore}</td>
                 <td>${pieChartHTML}</td>
             `;
 
