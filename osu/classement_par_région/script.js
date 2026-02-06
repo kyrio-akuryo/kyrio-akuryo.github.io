@@ -105,9 +105,24 @@ function renderTable() {
             const avatar = player.avatar_url || "https://osu.ppy.sh/images/layout/avatar-guest.png";
             const groupRaw = player.default_group || "default";
             const groupClass = `group-${groupRaw.toLowerCase()}`;
+            let playstyleHTML = '<div class="playstyle-container">';
             let groupBadgeHTML = groupRaw.toLowerCase() !== "default" ? `<span class="group-tag ${groupClass}">${groupRaw}</span>` : "";
             let teamHTML = "-";
             let supporterHTML = "";
+
+            if (player.playstyle && Array.isArray(player.playstyle)) {
+                player.playstyle.forEach(style => {
+                    if (ICONS[style]) {
+                        playstyleHTML += ICONS[style];
+                    }
+                });
+            }
+
+            else {
+                playstyleHTML += "-";
+            }
+
+            playstyleHTML += `</div>`;
 
             if (player.has_supported) {
                 supporterHTML = `
@@ -147,44 +162,30 @@ function renderTable() {
                 tooltipHTML = `<div class="prev-names-tooltip"><span class="tooltip-title">Anciennement</span>${player.previous_usernames.join(", ")}</div>`;
             }
 
-            if (player.playstyle && Array.isArray(player.playstyle)) {
-                player.playstyle.forEach(style => {
-                    if (ICONS[style]) {
-                        playstyleHTML += ICONS[style];
-                    }
-                });
-            }
-
-            else {
-                playstyleHTML += "-";
-            }
-
-            playstyleHTML += `</div>`;
-
             tr.innerHTML = `
                 <td><span class="rank-pill">${rankDisplay}</span></td>
                 <td>
                     <div class="player-info">
-                        <img src="${player.avatar_url}" alt="" class="avatar" loading="lazy">
+                        <img src="${avatar}" alt="" class="avatar" loading="lazy">
                         <div style="display:flex; flex-direction:column;">
                             <div class="name-container">
-                                <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="player-link ${'group-' + (player.default_group || 'default').toLowerCase()}">
+                                <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="player-link ${groupClass}">
                                     ${player.username}
                                 </a>
-                                ${player.has_supported ? `<svg class="supporter-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" style="fill:#ff66aa;"/></svg>` : ''}
-                                ${player.previous_usernames && player.previous_usernames.length > 0 ? `<div class="prev-names-tooltip"><span class="tooltip-title">Anciennement</span>${player.previous_usernames.join(", ")}</div>` : ''}
+                                ${supporterHTML}
+                                ${tooltipHTML}
                             </div>
-                            ${(player.default_group || 'default').toLowerCase() !== 'default' ? `<span class="group-tag group-${(player.default_group || 'default').toLowerCase()}">${player.default_group}</span>` : ''}
+                            ${groupBadgeHTML}
                         </div>
                     </div>
                 </td>
                 <td>${teamHTML || '-'}</td>
                 <td>${playstyleHTML}</td>
                 <td style="font-weight:bold; color:#aaa;">${globalRankDisplay}</td>
-                <td>${player.pp ? Math.round(player.pp).toLocaleString() : 0} pp</td>
-                <td>${player.hit_accuracy ? player.hit_accuracy.toFixed(2) : 0}%</td>
-                <td>${player.play_count ? player.play_count.toLocaleString() : 0}</td>
-                <td>Lvl ${player.level || 0}</td>
+                <td>${pp ? Math.round(player.pp).toLocaleString() : 0} pp</td>
+                <td>${acc ? player.hit_accuracy.toFixed(2) : 0}%</td>
+                <td>${playcount ? player.play_count.toLocaleString() : 0}</td>
+                <td>Lvl ${level || 0}</td>
             `;
 
             tbody.appendChild(tr);
