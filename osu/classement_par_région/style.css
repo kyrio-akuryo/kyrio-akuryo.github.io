@@ -296,9 +296,9 @@ thead th:hover {
 
 tbody tr {
     background-color: var(--card-bg);
-    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
-    height: 48px;
-    max-height: 48px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 64px;
+    max-height: 64px;
     background-size: cover;
     background-position: center;
 }
@@ -314,13 +314,13 @@ td {
     padding: 0 6px;
     border: none;
     color: #eee;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
-    height: 48px;
+    height: 64px;
     box-sizing: border-box;
-    padding: 0 6px;
+    padding: 0 8px;
     vertical-align: middle;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -374,9 +374,9 @@ tbody tr:nth-child(3) .rank-pill {
 }
 
 .avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 6px;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     flex-shrink: 0;
@@ -641,4 +641,12 @@ footer {
     vertical-align: middle;
     margin-top: -2px;
     filter: drop-shadow(0 0 5px rgba(255, 102, 170, 0.4));
+}
+
+.playstyle-tooltip,
+.rank-tooltip,
+.pie-tooltip,
+.prev-names-tooltip {
+    z-index: 99999 !important;
+    pointer-events: none;
 }
