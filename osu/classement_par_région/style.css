@@ -191,7 +191,10 @@ tbody tr {
     height: 70px;
     background-color: var(--bg-panel);
     border-bottom: 1px solid #2a2a2a;
-    transition: background-color 0.1s;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-color 0.1s, transform 0.1s;
 }
 
 tbody tr:hover {
@@ -315,17 +318,17 @@ tr:nth-child(3) td:first-child {
 
 th:nth-child(1),
 td:nth-child(1) {
-    width: 4%;
+    width: 2.5%;
 }
 
 th:nth-child(2),
 td:nth-child(2) {
-    width: 18%;
+    width: 15%;
 }
 
 th:nth-child(3),
 td:nth-child(3) {
-    width: 9%;
+    width: 7.5%;
 }
 
 th:nth-child(4),
@@ -372,22 +375,17 @@ td:nth-child(11) {
 }
 
 th:nth-child(12),
-td:nth-child(12) {
-    width: 9%;
-    font-size: 0.8rem;
-    color: #888;
-}
-
+td:nth-child(12),
 th:nth-child(13),
 td:nth-child(13) {
-    width: 9%;
+    width: 7.5%;
     font-size: 0.8rem;
     color: #888;
 }
 
 th:nth-child(14),
 td:nth-child(14) {
-    width: 5%;
+    width: 2.5%;
 }
 
 #global-tooltip {
