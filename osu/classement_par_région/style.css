@@ -258,6 +258,7 @@ tr:nth-child(3) td:first-child {
     align-items: center;
     gap: 12px;
     height: 100%;
+    overflow: hidden;
 }
 
 .avatar {
@@ -275,6 +276,8 @@ tr:nth-child(3) td:first-child {
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.2s;
+    word-break: break-word;
+    display: inline-block;
 }
 
 .player-link:hover {
@@ -337,22 +340,26 @@ tr:nth-child(3) td:first-child {
 
 th:nth-child(1),
 td:nth-child(1) {
-    width: 4%;
+    width: 2.5%;
 }
 
 th:nth-child(2),
 td:nth-child(2) {
-    width: 18%;
+    width: 15%;
+    white-space: normal !important;
+    line-height: 1.2;
 }
 
 th:nth-child(3),
 td:nth-child(3) {
-    width: 9%;
+    width: 7.5%;
+    white-space: normal !important;
+    line-height: 1.2;
 }
 
 th:nth-child(4),
 td:nth-child(4) {
-    width: 6%;
+    width: 5%;
     text-align: center;
 }
 
@@ -394,22 +401,17 @@ td:nth-child(11) {
 }
 
 th:nth-child(12),
-td:nth-child(12) {
-    width: 9%;
-    font-size: 0.8rem;
-    color: #888;
-}
-
+td:nth-child(12),
 th:nth-child(13),
 td:nth-child(13) {
-    width: 9%;
+    width: 7.5%;
     font-size: 0.8rem;
     color: #888;
 }
 
 th:nth-child(14),
 td:nth-child(14) {
-    width: 5%;
+    width: 2.5%;
 }
 
 #global-tooltip {
@@ -443,4 +445,20 @@ footer {
     color: #444;
     font-size: 0.8rem;
     margin-top: auto;
+}
+
+.team-name {
+    word-break: break-word;
+    font-size: 0.85rem;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.name-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-width: 0;
 }
