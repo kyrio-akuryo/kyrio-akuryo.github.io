@@ -314,13 +314,16 @@ tr:nth-child(3) td:first-child {
 .style-icon {
     width: 20px;
     height: 20px;
-    fill: #555;
+    fill: white;
+    opacity: 0.9;
     transition: all 0.2s;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
 }
 
 .playstyle-icon-box:hover .style-icon {
-    fill: white;
+    opacity: 1;
     transform: scale(1.2);
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6));
 }
 
 .pie-chart-container {
@@ -405,8 +408,9 @@ td:nth-child(12),
 th:nth-child(13),
 td:nth-child(13) {
     width: 7.5%;
-    font-size: 0.8rem;
-    color: #888;
+    font-size: 0.85rem;
+    color: white;
+    opacity: 0.9;
 }
 
 th:nth-child(14),
