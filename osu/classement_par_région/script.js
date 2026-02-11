@@ -143,33 +143,32 @@ function renderTable() {
                     ${color50} ${stop2}% 100%
                 )`;
 
-                pieChartHTML = `
-                    <div class="pie-chart-container">
-                        <div class="pie-chart" style="background: ${gradientStyle};"></div>
-                        <div class="pie-tooltip">
-                            <div style="margin-bottom:2px;">
-                                <span class="legend-dot" style="background:${color300}"></span>300 : <b>${p300.toFixed(2)}%</b>
-                            </div>
-                            <div style="margin-bottom:2px;">
-                                <span class="legend-dot" style="background:${color100}"></span>100 : <b>${p100.toFixed(2)}%</b>
-                            </div>
-                            <div>
-                                <span class="legend-dot" style="background:${color50}"></span>50 : <b>${p50.toFixed(2)}%</b>
-                            </div>
-                        </div>
-                    </div>
+                const tooltipContent = `
+                    <div style='margin-bottom:4px;'><span class='legend-dot' style='background:${color300}'></span>300 : <b>${p300.toFixed(2)}%</b></div>
+                    <div style='margin-bottom:4px;'><span class='legend-dot' style='background:${color100}'></span>100 : <b>${p100.toFixed(2)}%</b></div>
+                    <div><span class='legend-dot' style='background:${color50}'></span>50 : <b>${p50.toFixed(2)}%</b></div>
                 `;
+
+                pieChartHTML = `
+                <div class="pie-chart-container" 
+                     onmouseenter="showTooltip(event, \`${tooltipContent}\`)" 
+                     onmousemove="moveTooltip(event)" 
+                     onmouseleave="hideTooltip()">
+                    <div class="pie-chart" style="background: ${gradientStyle};"></div>
+                </div>
+            `;
             }
 
             if (player.rank_highest) {
                 const bestRank = `#${player.rank_highest.toLocaleString()}`;
+                const rankTooltip = `<span style='color:#ffcc22; font-weight:bold; text-transform:uppercase; display:block; margin-bottom:2px;'>Meilleur (Peak)</span>${bestRank}`;
+
                 globalRankHTML = `
-                    <div class="rank-container">
+                    <div class="rank-container"
+                         onmouseenter="showTooltip(event, \`${rankTooltip}\`)" 
+                         onmousemove="moveTooltip(event)" 
+                         onmouseleave="hideTooltip()">
                         ${globalRankDisplay}
-                        <div class="rank-tooltip">
-                            <span class="rank-peak-label">Meilleur (Peak)</span>
-                            ${bestRank}
-                        </div>
                     </div>
                 `;
             }
@@ -177,14 +176,15 @@ function renderTable() {
             if (player.playstyle && Array.isArray(player.playstyle) && player.playstyle.length > 0) {
                 player.playstyle.forEach(style => {
                     const formattedStyle = style.charAt(0).toUpperCase() + style.slice(1).toLowerCase();
-
                     if (ICONS[formattedStyle]) {
                         const frenchName = PLAYSTYLE_FR[formattedStyle] || formattedStyle;
 
                         playstyleHTML += `
-                            <div class="playstyle-icon-box">
+                            <div class="playstyle-icon-box"
+                                 onmouseenter="showTooltip(event, '${frenchName}')"
+                                 onmousemove="moveTooltip(event)"
+                                 onmouseleave="hideTooltip()">
                                 ${ICONS[formattedStyle]}
-                                <span class="playstyle-tooltip">${frenchName}</span>
                             </div>
                         `;
                     }
@@ -232,11 +232,13 @@ function renderTable() {
             let tooltipHTML = "";
 
             if (player.previous_usernames && player.previous_usernames.length > 0) {
-                tooltipHTML = `
-                    <div class="prev-names-tooltip">
-                        <div style="color:#aaa; font-size:0.7em; text-transform:uppercase; margin-bottom:4px;">Anciennement :</div>
-                        ${player.previous_usernames.join("<br>")}
-                    </div>
+                const namesList = player.previous_usernames.join("<br>");
+                const prevNameContent = `<div style='color:#aaa; font-size:0.7em; text-transform:uppercase; margin-bottom:5px;'>Anciennement :</div>${namesList}`;
+
+                nameTooltipEvents = `
+                    onmouseenter="showTooltip(event, \`${prevNameContent}\`)" 
+                    onmousemove="moveTooltip(event)" 
+                    onmouseleave="hideTooltip()"
                 `;
             }
 
@@ -308,4 +310,28 @@ function sortTable(column) {
     });
 
     renderTable();
+}
+
+const tooltipEl = document.getElementById('global-tooltip');
+
+function showTooltip(event, content) {
+    if (!tooltipEl) return;
+    tooltipEl.innerHTML = content;
+    tooltipEl.style.display = 'block';
+    moveTooltip(event);
+}
+
+function moveTooltip(event) {
+    if (!tooltipEl || tooltipEl.style.display === 'none') return;
+    const x = event.clientX + 15;
+    const y = event.clientY + 15;
+    tooltipEl.style.left = x + 'px';
+    tooltipEl.style.top = y + 'px';
+}
+
+function hideTooltip() {
+    if (tooltipEl) {
+        tooltipEl.style.display = 'none';
+        tooltipEl.innerHTML = '';
+    }
 }

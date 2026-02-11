@@ -582,22 +582,17 @@ td:nth-child(11) {
 }
 
 th:nth-child(12),
-td:nth-child(12) {
-    width: 10%;
-    font-size: 0.75rem;
-    opacity: 0.9;
-}
-
+td:nth-child(12),
 th:nth-child(13),
 td:nth-child(13) {
-    width: 10%;
+    width: 7.5%;
     font-size: 0.75rem;
     opacity: 0.9;
 }
 
 th:nth-child(14),
 td:nth-child(14) {
-    width: 11%;
+    width: 5%;
 }
 
 footer {
@@ -657,4 +652,31 @@ tbody tr,
 td {
     height: 80px;
     max-height: 80px;
+}
+
+#global-tooltip {
+    position: fixed;
+    display: none;
+    z-index: 1000000 !important;
+    background-color: rgba(18, 18, 22, 0.95);
+    backdrop-filter: blur(8px);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 102, 170, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    font-size: 0.85rem;
+    pointer-events: none;
+    white-space: nowrap;
+    text-align: left;
+    transition: opacity 0.1s ease, transform 0.1s ease;
+    transform-origin: top left;
+}
+
+#global-tooltip .legend-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
 }
