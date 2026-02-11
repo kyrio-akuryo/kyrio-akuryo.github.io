@@ -276,7 +276,7 @@ thead th {
     border: none;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 20;
 }
 
 thead th:first-child {
@@ -304,10 +304,12 @@ tbody tr {
 }
 
 tbody tr:hover {
-    transform: scale(1.005);
-    z-index: 5;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.01);
+    z-index: 50;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     filter: brightness(1.1);
+    background-color: #333;
 }
 
 td {
@@ -374,9 +376,9 @@ tbody tr:nth-child(3) .rank-pill {
 }
 
 .avatar {
-    width: 42px;
-    height: 42px;
-    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     flex-shrink: 0;
@@ -403,7 +405,7 @@ tbody tr:nth-child(3) .rank-pill {
 }
 
 .team-flag {
-    width: 30px;
+    width: 44px;
     height: auto;
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
@@ -649,4 +651,10 @@ footer {
 .prev-names-tooltip {
     z-index: 99999 !important;
     pointer-events: none;
+}
+
+tbody tr,
+td {
+    height: 80px;
+    max-height: 80px;
 }
