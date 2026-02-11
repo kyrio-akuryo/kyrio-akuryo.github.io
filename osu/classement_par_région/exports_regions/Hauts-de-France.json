@@ -16,13 +16,13 @@
             "tablet"
         ],
         "rank_highest": 21,
-        "follower_count": 20834,
+        "follower_count": 20829,
         "count_100": 1755736,
         "count_300": 28950066,
         "count_50": 155458,
         "level": 104.0,
-        "global_rank": 1489,
-        "global_rank_percent": 45.0,
+        "global_rank": 1497,
+        "global_rank_percent": 46.0,
         "pp": 13147.5,
         "ranked_score": 65839736726,
         "hit_accuracy": 98.9839,
@@ -30,7 +30,7 @@
         "play_time": 5860688,
         "total_score": 460164807603,
         "maximum_combo": 7426,
-        "replays_watched_by_others": 170180,
+        "replays_watched_by_others": 170183,
         "grade_counts": {
             "ss": 76,
             "ssh": 15,
@@ -38,13 +38,13 @@
             "sh": 282,
             "a": 1424
         },
-        "country_rank": 45,
+        "country_rank": 46,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/188/52f09c121ab476c8eea2aa338f73b59755b1b3a0faea9256939fc7a3eab6beec.png",
             "name": "osufrlive"
         },
         "default_group": "dev",
-        "last_updated": "2026-02-06 08:58:57"
+        "last_updated": "2026-02-11 11:28:14"
     },
     {
         "id": 1677992,
@@ -68,8 +68,8 @@
         "count_300": 14093320,
         "count_50": 58977,
         "level": 101.0,
-        "global_rank": 16306,
-        "global_rank_percent": 484.0,
+        "global_rank": 16371,
+        "global_rank_percent": 488.0,
         "pp": 8416.54,
         "ranked_score": 44925480444,
         "hit_accuracy": 99.4423,
@@ -85,10 +85,10 @@
             "sh": 1537,
             "a": 1071
         },
-        "country_rank": 484,
+        "country_rank": 488,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 08:58:37"
+        "last_updated": "2026-02-11 11:28:13"
     },
     {
         "id": 2467018,
@@ -110,20 +110,20 @@
         ],
         "rank_highest": 1339,
         "follower_count": 200,
-        "count_100": 2934259,
-        "count_300": 25496948,
-        "count_50": 423956,
+        "count_100": 2934677,
+        "count_300": 25499424,
+        "count_50": 424008,
         "level": 101.0,
-        "global_rank": 11692,
+        "global_rank": 11737,
         "global_rank_percent": 359.0,
         "pp": 9062.96,
         "ranked_score": 34160818510,
         "hit_accuracy": 98.5132,
-        "play_count": 129229,
-        "play_time": 6705694,
-        "total_score": 179274292627,
+        "play_count": 129240,
+        "play_time": 6706295,
+        "total_score": 179289611690,
         "maximum_combo": 3345,
-        "replays_watched_by_others": 740,
+        "replays_watched_by_others": 741,
         "grade_counts": {
             "ss": 64,
             "ssh": 92,
@@ -134,7 +134,52 @@
         "country_rank": 359,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 08:57:28"
+        "last_updated": "2026-02-11 11:28:15"
+    },
+    {
+        "id": 3709204,
+        "username": "LordGuillaume",
+        "previous_usernames": [
+            "doorhandle cate",
+            "Planatek 2"
+        ],
+        "avatar_url": "https://a.ppy.sh/3709204?1740251121.jpeg",
+        "cover_url": "https://assets.ppy.sh/user-cover-presets/19/2d85fcc09cd17097e0043c88646aa73371bbef2499970c276b409bc9b260717c.jpeg",
+        "region": "Hauts-de-France",
+        "is_active": 0,
+        "is_deleted": 0,
+        "has_supported": 1,
+        "playstyle": [
+            "keyboard",
+            "tablet"
+        ],
+        "rank_highest": 2731,
+        "follower_count": 76,
+        "count_100": 2033553,
+        "count_300": 13408958,
+        "count_50": 190366,
+        "level": 100.0,
+        "global_rank": 25180,
+        "global_rank_percent": 764.0,
+        "pp": 7575.94,
+        "ranked_score": 20232209407,
+        "hit_accuracy": 98.3863,
+        "play_count": 53568,
+        "play_time": 3618890,
+        "total_score": 88912606285,
+        "maximum_combo": 4567,
+        "replays_watched_by_others": 62,
+        "grade_counts": {
+            "ss": 15,
+            "ssh": 5,
+            "s": 519,
+            "sh": 59,
+            "a": 1859
+        },
+        "country_rank": 764,
+        "team": null,
+        "default_group": "default",
+        "last_updated": "2026-02-11 11:28:15"
     },
     {
         "id": 3723612,
@@ -154,18 +199,18 @@
         ],
         "rank_highest": 11871,
         "follower_count": 548,
-        "count_100": 1677553,
-        "count_300": 19194820,
-        "count_50": 169435,
+        "count_100": 1677697,
+        "count_300": 19196655,
+        "count_50": 169440,
         "level": 101.0,
-        "global_rank": 29092,
-        "global_rank_percent": 869.0,
+        "global_rank": 29189,
+        "global_rank_percent": 871.0,
         "pp": 7307.86,
         "ranked_score": 41181994781,
         "hit_accuracy": 99.0645,
-        "play_count": 60302,
-        "play_time": 4813757,
-        "total_score": 154012469353,
+        "play_count": 60306,
+        "play_time": 4814229,
+        "total_score": 154019589993,
         "maximum_combo": 5146,
         "replays_watched_by_others": 162,
         "grade_counts": {
@@ -175,13 +220,13 @@
             "sh": 74,
             "a": 1920
         },
-        "country_rank": 869,
+        "country_rank": 871,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/2801/557ef07081e7e126678845abc01cd64e366dbe6041fafe979f034de3dc218cf1.png",
             "name": "Aujourd'hui on VAZ"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 09:56:02"
+        "last_updated": "2026-02-11 11:28:16"
     },
     {
         "id": 3897665,
@@ -203,7 +248,7 @@
         "count_300": 11711103,
         "count_50": 102410,
         "level": 100.0,
-        "global_rank": 18003,
+        "global_rank": 18072,
         "global_rank_percent": 549.0,
         "pp": 8228.63,
         "ranked_score": 13745299098,
@@ -223,7 +268,7 @@
         "country_rank": 549,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:45:35"
+        "last_updated": "2026-02-11 11:28:16"
     },
     {
         "id": 4097394,
@@ -240,18 +285,18 @@
         "playstyle": null,
         "rank_highest": 5712,
         "follower_count": 50,
-        "count_100": 844554,
-        "count_300": 15982799,
-        "count_50": 85312,
+        "count_100": 845075,
+        "count_300": 16014284,
+        "count_50": 85372,
         "level": 101.0,
-        "global_rank": 13987,
-        "global_rank_percent": 418.0,
-        "pp": 8717.69,
-        "ranked_score": 32214194678,
-        "hit_accuracy": 99.4808,
-        "play_count": 64327,
-        "play_time": 4195117,
-        "total_score": 180066790195,
+        "global_rank": 13954,
+        "global_rank_percent": 416.0,
+        "pp": 8730.48,
+        "ranked_score": 32356359812,
+        "hit_accuracy": 99.4839,
+        "play_count": 64393,
+        "play_time": 4201527,
+        "total_score": 180768667058,
         "maximum_combo": 6626,
         "replays_watched_by_others": 255,
         "grade_counts": {
@@ -259,12 +304,12 @@
             "ssh": 103,
             "s": 387,
             "sh": 517,
-            "a": 1348
+            "a": 1349
         },
-        "country_rank": 418,
+        "country_rank": 416,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:51:15"
+        "last_updated": "2026-02-11 11:28:17"
     },
     {
         "id": 4144093,
@@ -286,18 +331,18 @@
         ],
         "rank_highest": 5357,
         "follower_count": 349,
-        "count_100": 2997261,
-        "count_300": 25455992,
-        "count_50": 361990,
+        "count_100": 2997702,
+        "count_300": 25458468,
+        "count_50": 362054,
         "level": 101.0,
-        "global_rank": 18269,
-        "global_rank_percent": 558.0,
+        "global_rank": 18332,
+        "global_rank_percent": 559.0,
         "pp": 8199.96,
         "ranked_score": 35053296726,
         "hit_accuracy": 98.7422,
-        "play_count": 171863,
-        "play_time": 7586352,
-        "total_score": 186023273288,
+        "play_count": 171889,
+        "play_time": 7587090,
+        "total_score": 186033004756,
         "maximum_combo": 3395,
         "replays_watched_by_others": 87,
         "grade_counts": {
@@ -307,10 +352,10 @@
             "sh": 663,
             "a": 2858
         },
-        "country_rank": 558,
+        "country_rank": 559,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:45:14"
+        "last_updated": "2026-02-11 11:28:17"
     },
     {
         "id": 4196709,
@@ -329,19 +374,19 @@
             "tablet"
         ],
         "rank_highest": 16914,
-        "follower_count": 258,
-        "count_100": 1225915,
-        "count_300": 14475147,
-        "count_50": 145022,
+        "follower_count": 259,
+        "count_100": 1226223,
+        "count_300": 14483625,
+        "count_50": 145038,
         "level": 100.0,
-        "global_rank": 31607,
-        "global_rank_percent": 959.0,
+        "global_rank": 31715,
+        "global_rank_percent": 961.0,
         "pp": 7151.18,
-        "ranked_score": 13451707221,
-        "hit_accuracy": 97.9308,
-        "play_count": 67372,
-        "play_time": 3601822,
-        "total_score": 72220569699,
+        "ranked_score": 13480580571,
+        "hit_accuracy": 97.9309,
+        "play_count": 67396,
+        "play_time": 3603584,
+        "total_score": 72322461947,
         "maximum_combo": 2774,
         "replays_watched_by_others": 374,
         "grade_counts": {
@@ -349,15 +394,15 @@
             "ssh": 4,
             "s": 496,
             "sh": 27,
-            "a": 1319
+            "a": 1323
         },
-        "country_rank": 959,
+        "country_rank": 961,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/21405/0164f690ff38ed8602646cc75615432ee9c5e95b64e8c762e43893cfa761d127.jpeg",
             "name": "aespa fanclub"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 09:57:29"
+        "last_updated": "2026-02-11 11:28:17"
     },
     {
         "id": 4308499,
@@ -382,8 +427,8 @@
         "count_300": 9056756,
         "count_50": 61241,
         "level": 100.0,
-        "global_rank": 8464,
-        "global_rank_percent": 255.0,
+        "global_rank": 8507,
+        "global_rank_percent": 256.0,
         "pp": 9672.38,
         "ranked_score": 15316585784,
         "hit_accuracy": 98.9658,
@@ -399,10 +444,10 @@
             "sh": 46,
             "a": 1012
         },
-        "country_rank": 255,
+        "country_rank": 256,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:45:54"
+        "last_updated": "2026-02-11 11:28:17"
     },
     {
         "id": 4381959,
@@ -427,8 +472,8 @@
         "count_300": 33511082,
         "count_50": 186056,
         "level": 104.0,
-        "global_rank": 4489,
-        "global_rank_percent": 141.0,
+        "global_rank": 4509,
+        "global_rank_percent": 142.0,
         "pp": 10863.2,
         "ranked_score": 40035495165,
         "hit_accuracy": 99.0089,
@@ -444,10 +489,10 @@
             "sh": 50,
             "a": 1351
         },
-        "country_rank": 141,
+        "country_rank": 142,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 08:54:15"
+        "last_updated": "2026-02-11 11:28:17"
     },
     {
         "id": 4430948,
@@ -541,7 +586,7 @@
         "avatar_url": "https://a.ppy.sh/4869601?1594230171.png",
         "cover_url": "https://assets.ppy.sh/user-profile-covers/4869601/cc32c3c33b3c7aa3200592aabd99f672e30521aa88ae8c76f102dc5c8455b516.jpeg",
         "region": "Hauts-de-France",
-        "is_active": 0,
+        "is_active": 1,
         "is_deleted": 0,
         "has_supported": 1,
         "playstyle": [
@@ -550,18 +595,18 @@
         ],
         "rank_highest": 487,
         "follower_count": 196,
-        "count_100": 1917339,
-        "count_300": 16669468,
-        "count_50": 231242,
+        "count_100": 1918294,
+        "count_300": 16675566,
+        "count_50": 231342,
         "level": 101.0,
-        "global_rank": 6656,
-        "global_rank_percent": 194.0,
+        "global_rank": 6688,
+        "global_rank_percent": 195.0,
         "pp": 10139.7,
         "ranked_score": 18044062907,
         "hit_accuracy": 97.8022,
-        "play_count": 94520,
-        "play_time": 4509886,
-        "total_score": 127711799342,
+        "play_count": 94566,
+        "play_time": 4511344,
+        "total_score": 127731079864,
         "maximum_combo": 4295,
         "replays_watched_by_others": 153,
         "grade_counts": {
@@ -571,10 +616,10 @@
             "sh": 56,
             "a": 1060
         },
-        "country_rank": 194,
+        "country_rank": 195,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 08:55:47"
+        "last_updated": "2026-02-11 11:28:18"
     },
     {
         "id": 5410051,
@@ -593,34 +638,34 @@
         ],
         "rank_highest": 1366,
         "follower_count": 287,
-        "count_100": 2309728,
-        "count_300": 32997405,
-        "count_50": 311935,
+        "count_100": 2310542,
+        "count_300": 33012731,
+        "count_50": 312044,
         "level": 103.0,
-        "global_rank": 8351,
-        "global_rank_percent": 252.0,
+        "global_rank": 8388,
+        "global_rank_percent": 253.0,
         "pp": 9696.59,
-        "ranked_score": 57797059152,
+        "ranked_score": 57798993558,
         "hit_accuracy": 99.6383,
-        "play_count": 160805,
-        "play_time": 9274571,
-        "total_score": 383742157662,
+        "play_count": 160840,
+        "play_time": 9277967,
+        "total_score": 383834217627,
         "maximum_combo": 7391,
-        "replays_watched_by_others": 1263,
+        "replays_watched_by_others": 1264,
         "grade_counts": {
-            "ss": 853,
+            "ss": 854,
             "ssh": 704,
             "s": 1340,
             "sh": 358,
             "a": 1521
         },
-        "country_rank": 252,
+        "country_rank": 253,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/9469/13622ee759621af5b68cc0d5e0fbe03349b38510ba20874c1905196694deb062.png",
             "name": "Kurashina Asuka fanclub"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 08:57:00"
+        "last_updated": "2026-02-11 11:28:19"
     },
     {
         "id": 5783315,
@@ -639,12 +684,12 @@
             "tablet"
         ],
         "rank_highest": 487,
-        "follower_count": 1116,
+        "follower_count": 1119,
         "count_100": 3379492,
         "count_300": 53358117,
         "count_50": 309015,
         "level": 106.0,
-        "global_rank": 860,
+        "global_rank": 862,
         "global_rank_percent": 25.0,
         "pp": 14207.8,
         "ranked_score": 87169131820,
@@ -653,7 +698,7 @@
         "play_time": 12129479,
         "total_score": 686633982028,
         "maximum_combo": 8894,
-        "replays_watched_by_others": 9244,
+        "replays_watched_by_others": 9250,
         "grade_counts": {
             "ss": 39,
             "ssh": 68,
@@ -667,7 +712,7 @@
             "name": "AIM"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 08:40:32"
+        "last_updated": "2026-02-11 11:28:19"
     },
     {
         "id": 5830489,
@@ -728,18 +773,18 @@
         ],
         "rank_highest": 8615,
         "follower_count": 64,
-        "count_100": 4182364,
-        "count_300": 32013274,
-        "count_50": 376091,
+        "count_100": 4188058,
+        "count_300": 32071189,
+        "count_50": 376429,
         "level": 101.0,
-        "global_rank": 10725,
+        "global_rank": 10774,
         "global_rank_percent": 323.0,
         "pp": 9237.98,
-        "ranked_score": 18984892837,
+        "ranked_score": 18995364063,
         "hit_accuracy": 97.797,
-        "play_count": 156360,
-        "play_time": 7823947,
-        "total_score": 211998895169,
+        "play_count": 156553,
+        "play_time": 7836309,
+        "total_score": 212422135162,
         "maximum_combo": 2793,
         "replays_watched_by_others": 9,
         "grade_counts": {
@@ -747,7 +792,7 @@
             "ssh": 15,
             "s": 464,
             "sh": 132,
-            "a": 2026
+            "a": 2028
         },
         "country_rank": 323,
         "team": {
@@ -755,7 +800,7 @@
             "name": "STREAM ARMY"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 09:52:01"
+        "last_updated": "2026-02-11 11:28:20"
     },
     {
         "id": 6315052,
@@ -780,8 +825,8 @@
         "count_300": 13669470,
         "count_50": 176743,
         "level": 100.0,
-        "global_rank": 32771,
-        "global_rank_percent": 997.0,
+        "global_rank": 32877,
+        "global_rank_percent": 998.0,
         "pp": 7087.74,
         "ranked_score": 15578743364,
         "hit_accuracy": 99.1471,
@@ -797,10 +842,10 @@
             "sh": 136,
             "a": 1463
         },
-        "country_rank": 997,
+        "country_rank": 998,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:55:56"
+        "last_updated": "2026-02-11 11:28:20"
     },
     {
         "id": 6467693,
@@ -818,18 +863,18 @@
         ],
         "rank_highest": 2906,
         "follower_count": 255,
-        "count_100": 1920918,
-        "count_300": 21289393,
-        "count_50": 216300,
+        "count_100": 1921283,
+        "count_300": 21293474,
+        "count_50": 216326,
         "level": 101.0,
-        "global_rank": 15429,
-        "global_rank_percent": 464.0,
+        "global_rank": 15481,
+        "global_rank_percent": 466.0,
         "pp": 8523.2,
         "ranked_score": 34735937631,
         "hit_accuracy": 98.7032,
-        "play_count": 76351,
-        "play_time": 5366649,
-        "total_score": 185663185279,
+        "play_count": 76359,
+        "play_time": 5367540,
+        "total_score": 185687188990,
         "maximum_combo": 5144,
         "replays_watched_by_others": 371,
         "grade_counts": {
@@ -839,10 +884,10 @@
             "sh": 685,
             "a": 1820
         },
-        "country_rank": 464,
+        "country_rank": 466,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 08:58:03"
+        "last_updated": "2026-02-11 11:28:20"
     },
     {
         "id": 6723257,
@@ -868,8 +913,8 @@
         "count_300": 11438915,
         "count_50": 113888,
         "level": 100.0,
-        "global_rank": 27642,
-        "global_rank_percent": 829.0,
+        "global_rank": 27732,
+        "global_rank_percent": 832.0,
         "pp": 7398.92,
         "ranked_score": 19887934159,
         "hit_accuracy": 99.2048,
@@ -885,10 +930,10 @@
             "sh": 482,
             "a": 1828
         },
-        "country_rank": 829,
+        "country_rank": 832,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:53:50"
+        "last_updated": "2026-02-11 11:28:21"
     },
     {
         "id": 7298776,
@@ -913,7 +958,7 @@
         "count_300": 22748974,
         "count_50": 174975,
         "level": 102.0,
-        "global_rank": 13582,
+        "global_rank": 13647,
         "global_rank_percent": 406.0,
         "pp": 8772.25,
         "ranked_score": 40356319836,
@@ -933,7 +978,7 @@
         "country_rank": 406,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 08:57:41"
+        "last_updated": "2026-02-11 11:28:21"
     },
     {
         "id": 7365196,
@@ -955,7 +1000,7 @@
         "count_300": 18406818,
         "count_50": 167893,
         "level": 100.0,
-        "global_rank": 18104,
+        "global_rank": 18175,
         "global_rank_percent": 555.0,
         "pp": 8217.93,
         "ranked_score": 40091501580,
@@ -975,7 +1020,7 @@
         "country_rank": 555,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:51:47"
+        "last_updated": "2026-02-11 11:28:21"
     },
     {
         "id": 7486712,
@@ -996,8 +1041,8 @@
         "count_300": 13932427,
         "count_50": 306268,
         "level": 100.0,
-        "global_rank": 51018,
-        "global_rank_percent": 1602.0,
+        "global_rank": 51164,
+        "global_rank_percent": 1604.0,
         "pp": 6263.6,
         "ranked_score": 10613556423,
         "hit_accuracy": 98.5989,
@@ -1013,10 +1058,10 @@
             "sh": 53,
             "a": 831
         },
-        "country_rank": 1602,
+        "country_rank": 1604,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:57:46"
+        "last_updated": "2026-02-11 11:28:22"
     },
     {
         "id": 7712823,
@@ -1041,8 +1086,8 @@
         "count_300": 26222550,
         "count_50": 120940,
         "level": 101.0,
-        "global_rank": 30818,
-        "global_rank_percent": 934.0,
+        "global_rank": 30920,
+        "global_rank_percent": 936.0,
         "pp": 7198.26,
         "ranked_score": 28007750673,
         "hit_accuracy": 98.8736,
@@ -1058,10 +1103,10 @@
             "sh": 323,
             "a": 2288
         },
-        "country_rank": 934,
+        "country_rank": 936,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:56:08"
+        "last_updated": "2026-02-11 11:28:22"
     },
     {
         "id": 7724523,
@@ -1080,26 +1125,26 @@
             "tablet"
         ],
         "rank_highest": 9609,
-        "follower_count": 84,
-        "count_100": 2612618,
-        "count_300": 30009522,
-        "count_50": 287131,
+        "follower_count": 85,
+        "count_100": 2613114,
+        "count_300": 30022171,
+        "count_50": 287150,
         "level": 103.0,
-        "global_rank": 11878,
+        "global_rank": 11930,
         "global_rank_percent": 365.0,
         "pp": 9032.19,
-        "ranked_score": 147406663053,
+        "ranked_score": 147504008404,
         "hit_accuracy": 99.1699,
-        "play_count": 119962,
-        "play_time": 7978582,
-        "total_score": 396777718862,
+        "play_count": 120010,
+        "play_time": 7982147,
+        "total_score": 396949429490,
         "maximum_combo": 8962,
-        "replays_watched_by_others": 758,
+        "replays_watched_by_others": 761,
         "grade_counts": {
             "ss": 664,
-            "ssh": 2306,
-            "s": 5126,
-            "sh": 6936,
+            "ssh": 2309,
+            "s": 5125,
+            "sh": 6947,
             "a": 1423
         },
         "country_rank": 365,
@@ -1108,7 +1153,7 @@
             "name": "miaou"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 09:35:51"
+        "last_updated": "2026-02-11 11:28:22"
     },
     {
         "id": 8234160,
@@ -1132,8 +1177,8 @@
         "count_300": 31130993,
         "count_50": 632817,
         "level": 102.0,
-        "global_rank": 20140,
-        "global_rank_percent": 603.0,
+        "global_rank": 20211,
+        "global_rank_percent": 604.0,
         "pp": 8008.97,
         "ranked_score": 40303859160,
         "hit_accuracy": 98.3561,
@@ -1141,7 +1186,7 @@
         "play_time": 8682914,
         "total_score": 255534895135,
         "maximum_combo": 9285,
-        "replays_watched_by_others": 6993,
+        "replays_watched_by_others": 6994,
         "grade_counts": {
             "ss": 230,
             "ssh": 108,
@@ -1149,10 +1194,10 @@
             "sh": 623,
             "a": 1335
         },
-        "country_rank": 603,
+        "country_rank": 604,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:45:46"
+        "last_updated": "2026-02-11 11:28:23"
     },
     {
         "id": 8236896,
@@ -1177,8 +1222,8 @@
         "count_300": 2247798,
         "count_50": 35188,
         "level": 97.0,
-        "global_rank": 211244,
-        "global_rank_percent": 7409.0,
+        "global_rank": 211838,
+        "global_rank_percent": 7434.0,
         "pp": 3544.88,
         "ranked_score": 2133498227,
         "hit_accuracy": 98.1171,
@@ -1194,13 +1239,13 @@
             "sh": 359,
             "a": 219
         },
-        "country_rank": 7409,
+        "country_rank": 7434,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/278/27e84e6af3b3f090bd7ce3091c01d212c8570d99f220ba254cc6c1d5db5c35b2.png",
             "name": "Furry"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 09:58:32"
+        "last_updated": "2026-02-11 11:28:23"
     },
     {
         "id": 8274475,
@@ -1224,8 +1269,8 @@
         "count_300": 13023376,
         "count_50": 117026,
         "level": 100.0,
-        "global_rank": 17279,
-        "global_rank_percent": 525.0,
+        "global_rank": 17348,
+        "global_rank_percent": 528.0,
         "pp": 8307.21,
         "ranked_score": 18855542567,
         "hit_accuracy": 98.6661,
@@ -1241,10 +1286,10 @@
             "sh": 168,
             "a": 1310
         },
-        "country_rank": 525,
+        "country_rank": 528,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 08:58:43"
+        "last_updated": "2026-02-11 11:28:23"
     },
     {
         "id": 8440059,
@@ -1269,8 +1314,8 @@
         "count_300": 23905001,
         "count_50": 1046720,
         "level": 101.0,
-        "global_rank": 34792,
-        "global_rank_percent": 1064.0,
+        "global_rank": 34905,
+        "global_rank_percent": 1069.0,
         "pp": 6973.84,
         "ranked_score": 22929160968,
         "hit_accuracy": 97.9511,
@@ -1286,10 +1331,10 @@
             "sh": 187,
             "a": 2342
         },
-        "country_rank": 1064,
+        "country_rank": 1069,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:56:13"
+        "last_updated": "2026-02-11 11:28:23"
     },
     {
         "id": 8467121,
@@ -1314,7 +1359,7 @@
         "count_300": 21755321,
         "count_50": 258316,
         "level": 101.0,
-        "global_rank": 13156,
+        "global_rank": 13215,
         "global_rank_percent": 398.0,
         "pp": 8835.4,
         "ranked_score": 24412213102,
@@ -1337,7 +1382,7 @@
             "name": "Macron"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 09:41:21"
+        "last_updated": "2026-02-11 11:28:23"
     },
     {
         "id": 8619107,
@@ -1358,18 +1403,18 @@
         ],
         "rank_highest": 1853,
         "follower_count": 205,
-        "count_100": 4453697,
-        "count_300": 37512972,
-        "count_50": 539278,
+        "count_100": 4454676,
+        "count_300": 37525271,
+        "count_50": 539346,
         "level": 101.0,
-        "global_rank": 2709,
+        "global_rank": 2716,
         "global_rank_percent": 86.0,
         "pp": 11926.6,
-        "ranked_score": 27761346432,
+        "ranked_score": 27766027438,
         "hit_accuracy": 98.5851,
-        "play_count": 284194,
-        "play_time": 9386437,
-        "total_score": 199487527723,
+        "play_count": 284306,
+        "play_time": 9389142,
+        "total_score": 199543737265,
         "maximum_combo": 7200,
         "replays_watched_by_others": 277,
         "grade_counts": {
@@ -1377,7 +1422,7 @@
             "ssh": 36,
             "s": 424,
             "sh": 406,
-            "a": 2913
+            "a": 2915
         },
         "country_rank": 86,
         "team": {
@@ -1385,7 +1430,7 @@
             "name": "Cars"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 08:54:55"
+        "last_updated": "2026-02-11 11:28:24"
     },
     {
         "id": 8624433,
@@ -1455,8 +1500,8 @@
         "count_300": 17698623,
         "count_50": 78869,
         "level": 101.0,
-        "global_rank": 30804,
-        "global_rank_percent": 933.0,
+        "global_rank": 30905,
+        "global_rank_percent": 935.0,
         "pp": 7199.13,
         "ranked_score": 11826503091,
         "hit_accuracy": 99.0124,
@@ -1472,10 +1517,10 @@
             "sh": 86,
             "a": 1326
         },
-        "country_rank": 933,
+        "country_rank": 935,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:56:28"
+        "last_updated": "2026-02-11 11:28:24"
     },
     {
         "id": 8728016,
@@ -1497,8 +1542,8 @@
         "count_300": 22295796,
         "count_50": 286233,
         "level": 101.0,
-        "global_rank": 22431,
-        "global_rank_percent": 687.0,
+        "global_rank": 22505,
+        "global_rank_percent": 688.0,
         "pp": 7788.78,
         "ranked_score": 38621301707,
         "hit_accuracy": 99.106,
@@ -1514,10 +1559,10 @@
             "sh": 363,
             "a": 3655
         },
-        "country_rank": 687,
+        "country_rank": 688,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:51:28"
+        "last_updated": "2026-02-11 11:28:24"
     },
     {
         "id": 8824226,
@@ -1536,26 +1581,26 @@
         ],
         "rank_highest": 2810,
         "follower_count": 215,
-        "count_100": 3183391,
-        "count_300": 20593978,
-        "count_50": 516289,
+        "count_100": 3186948,
+        "count_300": 20618326,
+        "count_50": 516796,
         "level": 100.0,
-        "global_rank": 2814,
+        "global_rank": 2820,
         "global_rank_percent": 88.0,
         "pp": 11840.2,
-        "ranked_score": 28004044557,
+        "ranked_score": 28060088736,
         "hit_accuracy": 97.4674,
-        "play_count": 97652,
-        "play_time": 5230641,
-        "total_score": 123700345148,
+        "play_count": 97735,
+        "play_time": 5235696,
+        "total_score": 123874665988,
         "maximum_combo": 3662,
-        "replays_watched_by_others": 203,
+        "replays_watched_by_others": 204,
         "grade_counts": {
             "ss": 13,
             "ssh": 6,
             "s": 414,
             "sh": 215,
-            "a": 2413
+            "a": 2416
         },
         "country_rank": 88,
         "team": {
@@ -1563,7 +1608,7 @@
             "name": "Chad gang"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 09:41:27"
+        "last_updated": "2026-02-11 11:28:25"
     },
     {
         "id": 8861185,
@@ -1587,8 +1632,8 @@
         "count_300": 3955899,
         "count_50": 46646,
         "level": 99.0,
-        "global_rank": 125095,
-        "global_rank_percent": 4164.0,
+        "global_rank": 125464,
+        "global_rank_percent": 4179.0,
         "pp": 4586.2,
         "ranked_score": 7758118075,
         "hit_accuracy": 98.9363,
@@ -1604,10 +1649,10 @@
             "sh": 237,
             "a": 1197
         },
-        "country_rank": 4164,
+        "country_rank": 4179,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:58:19"
+        "last_updated": "2026-02-11 11:28:25"
     },
     {
         "id": 8985249,
@@ -1618,7 +1663,7 @@
         "avatar_url": "https://a.ppy.sh/8985249?1596224734.png",
         "cover_url": "https://assets.ppy.sh/user-cover-presets/7/4a0ccb7b7fdd5c4238b11f0e7c686760fe2c99c6472b19400e82d1a8ff503e31.jpeg",
         "region": "Hauts-de-France",
-        "is_active": 0,
+        "is_active": 1,
         "is_deleted": 0,
         "has_supported": 1,
         "playstyle": [
@@ -1631,8 +1676,8 @@
         "count_300": 6713007,
         "count_50": 79626,
         "level": 100.0,
-        "global_rank": 79148,
-        "global_rank_percent": 2527.0,
+        "global_rank": 79373,
+        "global_rank_percent": 2539.0,
         "pp": 5455.22,
         "ranked_score": 3544183405,
         "hit_accuracy": 97.0898,
@@ -1648,10 +1693,10 @@
             "sh": 40,
             "a": 679
         },
-        "country_rank": 2527,
+        "country_rank": 2539,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:58:00"
+        "last_updated": "2026-02-11 11:28:25"
     },
     {
         "id": 9266902,
@@ -1676,8 +1721,8 @@
         "count_300": 10948959,
         "count_50": 111047,
         "level": 100.0,
-        "global_rank": 55339,
-        "global_rank_percent": 1743.0,
+        "global_rank": 55495,
+        "global_rank_percent": 1746.0,
         "pp": 6115.52,
         "ranked_score": 14341860902,
         "hit_accuracy": 99.1461,
@@ -1693,10 +1738,10 @@
             "sh": 116,
             "a": 809
         },
-        "country_rank": 1743,
+        "country_rank": 1746,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:57:23"
+        "last_updated": "2026-02-11 11:28:25"
     },
     {
         "id": 9294630,
@@ -1716,19 +1761,19 @@
             "keyboard"
         ],
         "rank_highest": 8151,
-        "follower_count": 54,
-        "count_100": 4111011,
-        "count_300": 20493488,
-        "count_50": 513967,
+        "follower_count": 53,
+        "count_100": 4114307,
+        "count_300": 20509091,
+        "count_50": 514259,
         "level": 100.0,
-        "global_rank": 31825,
-        "global_rank_percent": 968.0,
+        "global_rank": 31928,
+        "global_rank_percent": 970.0,
         "pp": 7139.73,
-        "ranked_score": 17063117609,
+        "ranked_score": 17063372064,
         "hit_accuracy": 95.7972,
-        "play_count": 158292,
-        "play_time": 6472578,
-        "total_score": 88031122209,
+        "play_count": 158357,
+        "play_time": 6476491,
+        "total_score": 88079292509,
         "maximum_combo": 1999,
         "replays_watched_by_others": 73,
         "grade_counts": {
@@ -1738,10 +1783,10 @@
             "sh": 460,
             "a": 2383
         },
-        "country_rank": 968,
+        "country_rank": 970,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:55:49"
+        "last_updated": "2026-02-11 11:28:25"
     },
     {
         "id": 9326822,
@@ -1766,8 +1811,8 @@
         "count_300": 14694635,
         "count_50": 157196,
         "level": 100.0,
-        "global_rank": 36522,
-        "global_rank_percent": 1125.0,
+        "global_rank": 36643,
+        "global_rank_percent": 1131.0,
         "pp": 6883.87,
         "ranked_score": 18182243047,
         "hit_accuracy": 98.6437,
@@ -1783,10 +1828,10 @@
             "sh": 39,
             "a": 1788
         },
-        "country_rank": 1125,
+        "country_rank": 1131,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:56:23"
+        "last_updated": "2026-02-11 11:28:26"
     },
     {
         "id": 9370167,
@@ -1797,7 +1842,7 @@
         "avatar_url": "https://a.ppy.sh/9370167?1748819819.jpeg",
         "cover_url": "https://assets.ppy.sh/user-profile-covers/9370167/0916056d3830a91366523182025874ebdf2ec21e5ea98c075c70176bd528a4f7.jpeg",
         "region": "Hauts-de-France",
-        "is_active": 1,
+        "is_active": 0,
         "is_deleted": 0,
         "has_supported": 1,
         "playstyle": [
@@ -1809,8 +1854,8 @@
         "count_300": 5558933,
         "count_50": 49783,
         "level": 100.0,
-        "global_rank": 107295,
-        "global_rank_percent": 3504.0,
+        "global_rank": 107598,
+        "global_rank_percent": 3520.0,
         "pp": 4892.01,
         "ranked_score": 10271866261,
         "hit_accuracy": 98.249,
@@ -1826,10 +1871,10 @@
             "sh": 92,
             "a": 830
         },
-        "country_rank": 3504,
+        "country_rank": 3520,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:58:15"
+        "last_updated": "2026-02-11 11:28:26"
     },
     {
         "id": 9417008,
@@ -1896,8 +1941,8 @@
         "count_300": 10530308,
         "count_50": 163135,
         "level": 100.0,
-        "global_rank": 49621,
-        "global_rank_percent": 1549.0,
+        "global_rank": 49766,
+        "global_rank_percent": 1551.0,
         "pp": 6316.06,
         "ranked_score": 10037669253,
         "hit_accuracy": 98.4279,
@@ -1913,10 +1958,10 @@
             "sh": 8,
             "a": 1013
         },
-        "country_rank": 1549,
+        "country_rank": 1551,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:57:18"
+        "last_updated": "2026-02-11 11:28:27"
     },
     {
         "id": 10312527,
@@ -1983,8 +2028,8 @@
         "count_300": 10757555,
         "count_50": 143395,
         "level": 100.0,
-        "global_rank": 84120,
-        "global_rank_percent": 2694.0,
+        "global_rank": 84350,
+        "global_rank_percent": 2706.0,
         "pp": 5343.62,
         "ranked_score": 19314964293,
         "hit_accuracy": 98.3892,
@@ -2000,10 +2045,10 @@
             "sh": 326,
             "a": 2399
         },
-        "country_rank": 2694,
+        "country_rank": 2706,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:57:50"
+        "last_updated": "2026-02-11 11:28:28"
     },
     {
         "id": 10660738,
@@ -2026,8 +2071,8 @@
         "count_300": 46605169,
         "count_50": 344412,
         "level": 103.0,
-        "global_rank": 57781,
-        "global_rank_percent": 1826.0,
+        "global_rank": 57936,
+        "global_rank_percent": 1831.0,
         "pp": 6033.3,
         "ranked_score": 298826360969,
         "hit_accuracy": 98.8545,
@@ -2035,7 +2080,7 @@
         "play_time": 13478712,
         "total_score": 347400444089,
         "maximum_combo": 10199,
-        "replays_watched_by_others": 16219,
+        "replays_watched_by_others": 16226,
         "grade_counts": {
             "ss": 783,
             "ssh": 21561,
@@ -2043,13 +2088,13 @@
             "sh": 33585,
             "a": 35233
         },
-        "country_rank": 1826,
+        "country_rank": 1831,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/18/40b35508023d1fb915607465979799d3080d5a274d99de3504bc0bd0cfa3d5c2.jpeg",
             "name": "The Method"
         },
         "default_group": "gmt",
-        "last_updated": "2026-02-06 08:59:15"
+        "last_updated": "2026-02-11 11:28:29"
     },
     {
         "id": 10768862,
@@ -2075,7 +2120,7 @@
         "count_300": 14259048,
         "count_50": 154064,
         "level": 100.0,
-        "global_rank": 12758,
+        "global_rank": 12814,
         "global_rank_percent": 389.0,
         "pp": 8894.28,
         "ranked_score": 17796360389,
@@ -2095,7 +2140,7 @@
         "country_rank": 389,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:57:03"
+        "last_updated": "2026-02-11 11:28:28"
     },
     {
         "id": 10818654,
@@ -2118,18 +2163,18 @@
         ],
         "rank_highest": 23469,
         "follower_count": 245,
-        "count_100": 1457243,
-        "count_300": 11215290,
-        "count_50": 171760,
+        "count_100": 1457976,
+        "count_300": 11219758,
+        "count_50": 171860,
         "level": 100.0,
-        "global_rank": 39596,
-        "global_rank_percent": 1237.0,
+        "global_rank": 39719,
+        "global_rank_percent": 1241.0,
         "pp": 6733.05,
-        "ranked_score": 21386684370,
+        "ranked_score": 21386808919,
         "hit_accuracy": 98.8108,
-        "play_count": 58255,
-        "play_time": 3457512,
-        "total_score": 94002973946,
+        "play_count": 58271,
+        "play_time": 3458770,
+        "total_score": 94079219283,
         "maximum_combo": 3269,
         "replays_watched_by_others": 36,
         "grade_counts": {
@@ -2139,13 +2184,13 @@
             "sh": 1211,
             "a": 1600
         },
-        "country_rank": 1237,
+        "country_rank": 1241,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/18/40b35508023d1fb915607465979799d3080d5a274d99de3504bc0bd0cfa3d5c2.jpeg",
             "name": "The Method"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 08:59:16"
+        "last_updated": "2026-02-11 11:28:29"
     },
     {
         "id": 10927621,
@@ -2208,18 +2253,18 @@
         ],
         "rank_highest": 62924,
         "follower_count": 74,
-        "count_100": 1431747,
-        "count_300": 9723575,
-        "count_50": 148859,
+        "count_100": 1432403,
+        "count_300": 9732042,
+        "count_50": 148900,
         "level": 100.0,
-        "global_rank": 88665,
-        "global_rank_percent": 2857.0,
+        "global_rank": 88904,
+        "global_rank_percent": 2869.0,
         "pp": 5246.16,
-        "ranked_score": 7979549052,
+        "ranked_score": 7982902170,
         "hit_accuracy": 98.5323,
-        "play_count": 65048,
-        "play_time": 2989073,
-        "total_score": 42595542109,
+        "play_count": 65103,
+        "play_time": 2991190,
+        "total_score": 42637710053,
         "maximum_combo": 1812,
         "replays_watched_by_others": 0,
         "grade_counts": {
@@ -2229,13 +2274,13 @@
             "sh": 33,
             "a": 1231
         },
-        "country_rank": 2857,
+        "country_rank": 2869,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/2705/08e51cc132879dab9f5f9a6ac6fbc278aa198947b5837061980b95768ae72152.jpeg",
             "name": "Cars"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 09:58:04"
+        "last_updated": "2026-02-11 11:28:29"
     },
     {
         "id": 11185623,
@@ -2261,8 +2306,8 @@
         "count_300": 18950624,
         "count_50": 143786,
         "level": 101.0,
-        "global_rank": 21546,
-        "global_rank_percent": 660.0,
+        "global_rank": 21613,
+        "global_rank_percent": 661.0,
         "pp": 7868.28,
         "ranked_score": 30245746518,
         "hit_accuracy": 97.9211,
@@ -2278,10 +2323,10 @@
             "sh": 130,
             "a": 2044
         },
-        "country_rank": 660,
+        "country_rank": 661,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:51:53"
+        "last_updated": "2026-02-11 11:28:29"
     },
     {
         "id": 11204825,
@@ -2299,18 +2344,18 @@
         ],
         "rank_highest": 3212,
         "follower_count": 91,
-        "count_100": 1909672,
-        "count_300": 17259501,
-        "count_50": 193419,
+        "count_100": 1910011,
+        "count_300": 17262044,
+        "count_50": 193465,
         "level": 101.0,
-        "global_rank": 16086,
-        "global_rank_percent": 478.0,
+        "global_rank": 16139,
+        "global_rank_percent": 481.0,
         "pp": 8443.33,
         "ranked_score": 38916404512,
         "hit_accuracy": 98.8054,
-        "play_count": 109504,
-        "play_time": 4707269,
-        "total_score": 150045386757,
+        "play_count": 109518,
+        "play_time": 4707974,
+        "total_score": 150055316425,
         "maximum_combo": 5642,
         "replays_watched_by_others": 124,
         "grade_counts": {
@@ -2320,10 +2365,10 @@
             "sh": 268,
             "a": 2133
         },
-        "country_rank": 478,
+        "country_rank": 481,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 08:57:53"
+        "last_updated": "2026-02-11 11:28:30"
     },
     {
         "id": 11245184,
@@ -2342,19 +2387,19 @@
             "tablet"
         ],
         "rank_highest": 2494,
-        "follower_count": 191,
-        "count_100": 1728426,
-        "count_300": 19470046,
+        "follower_count": 193,
+        "count_100": 1728431,
+        "count_300": 19470451,
         "count_50": 154048,
         "level": 101.0,
-        "global_rank": 3461,
+        "global_rank": 3475,
         "global_rank_percent": 104.0,
         "pp": 11401.5,
         "ranked_score": 45982395480,
         "hit_accuracy": 98.7309,
-        "play_count": 62831,
-        "play_time": 4434195,
-        "total_score": 218473698252,
+        "play_count": 62832,
+        "play_time": 4434300,
+        "total_score": 218481342287,
         "maximum_combo": 3635,
         "replays_watched_by_others": 295,
         "grade_counts": {
@@ -2367,7 +2412,7 @@
         "country_rank": 104,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 08:55:35"
+        "last_updated": "2026-02-11 11:28:30"
     },
     {
         "id": 11260982,
@@ -2384,13 +2429,13 @@
             "keyboard"
         ],
         "rank_highest": 30782,
-        "follower_count": 637,
+        "follower_count": 638,
         "count_100": 763936,
         "count_300": 5624886,
         "count_50": 124360,
         "level": 99.0,
-        "global_rank": 38713,
-        "global_rank_percent": 1201.0,
+        "global_rank": 38837,
+        "global_rank_percent": 1204.0,
         "pp": 6773.42,
         "ranked_score": 1907111431,
         "hit_accuracy": 97.8209,
@@ -2406,13 +2451,13 @@
             "sh": 63,
             "a": 436
         },
-        "country_rank": 1201,
+        "country_rank": 1204,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/239/77b7e69bb0bd59f3910331222aaed75d05e588c5c3fa388579d33de4bc64d19a.jpeg",
             "name": "Skillcap Sweats"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 09:58:09"
+        "last_updated": "2026-02-11 11:28:30"
     },
     {
         "id": 11289731,
@@ -2433,8 +2478,8 @@
         "count_300": 2692149,
         "count_50": 67334,
         "level": 97.0,
-        "global_rank": 269732,
-        "global_rank_percent": 9521.0,
+        "global_rank": 270553,
+        "global_rank_percent": 9552.0,
         "pp": 3069.03,
         "ranked_score": 4183215650,
         "hit_accuracy": 94.4277,
@@ -2450,10 +2495,10 @@
             "sh": 132,
             "a": 911
         },
-        "country_rank": 9521,
+        "country_rank": 9552,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:58:43"
+        "last_updated": "2026-02-11 11:28:31"
     },
     {
         "id": 11345180,
@@ -2476,18 +2521,18 @@
         ],
         "rank_highest": 18303,
         "follower_count": 91,
-        "count_100": 1975933,
-        "count_300": 14331663,
-        "count_50": 226069,
+        "count_100": 1976434,
+        "count_300": 14333404,
+        "count_50": 226125,
         "level": 100.0,
-        "global_rank": 42491,
-        "global_rank_percent": 1333.0,
+        "global_rank": 42627,
+        "global_rank_percent": 1337.0,
         "pp": 6599.36,
         "ranked_score": 18189324765,
         "hit_accuracy": 98.4819,
-        "play_count": 62394,
-        "play_time": 3910737,
-        "total_score": 107445198442,
+        "play_count": 62401,
+        "play_time": 3911447,
+        "total_score": 107464269641,
         "maximum_combo": 2688,
         "replays_watched_by_others": 28,
         "grade_counts": {
@@ -2497,10 +2542,10 @@
             "sh": 168,
             "a": 1426
         },
-        "country_rank": 1333,
+        "country_rank": 1337,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:57:08"
+        "last_updated": "2026-02-11 11:28:30"
     },
     {
         "id": 11424976,
@@ -2603,18 +2648,18 @@
         ],
         "rank_highest": 1410,
         "follower_count": 93,
-        "count_100": 3107546,
-        "count_300": 28761018,
-        "count_50": 309339,
+        "count_100": 3109892,
+        "count_300": 28785879,
+        "count_50": 309551,
         "level": 101.0,
-        "global_rank": 2462,
+        "global_rank": 2473,
         "global_rank_percent": 75.0,
         "pp": 12117.0,
-        "ranked_score": 24563139789,
+        "ranked_score": 24568029476,
         "hit_accuracy": 97.6306,
-        "play_count": 120106,
-        "play_time": 6819725,
-        "total_score": 170567982359,
+        "play_count": 120204,
+        "play_time": 6824919,
+        "total_score": 170664255562,
         "maximum_combo": 2141,
         "replays_watched_by_others": 107,
         "grade_counts": {
@@ -2622,7 +2667,7 @@
             "ssh": 8,
             "s": 190,
             "sh": 283,
-            "a": 2617
+            "a": 2618
         },
         "country_rank": 75,
         "team": {
@@ -2630,7 +2675,7 @@
             "name": "Balloc probiotics"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 08:54:31"
+        "last_updated": "2026-02-11 11:28:31"
     },
     {
         "id": 12087973,
@@ -2652,8 +2697,8 @@
         "count_300": 12597478,
         "count_50": 166855,
         "level": 100.0,
-        "global_rank": 39260,
-        "global_rank_percent": 1221.0,
+        "global_rank": 39392,
+        "global_rank_percent": 1226.0,
         "pp": 6746.76,
         "ranked_score": 16812868402,
         "hit_accuracy": 98.7507,
@@ -2669,10 +2714,10 @@
             "sh": 38,
             "a": 1545
         },
-        "country_rank": 1221,
+        "country_rank": 1226,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:56:54"
+        "last_updated": "2026-02-11 11:28:32"
     },
     {
         "id": 12297980,
@@ -2690,18 +2735,18 @@
         ],
         "rank_highest": 12137,
         "follower_count": 54,
-        "count_100": 968732,
-        "count_300": 11411060,
-        "count_50": 85279,
+        "count_100": 969719,
+        "count_300": 11422339,
+        "count_50": 85372,
         "level": 100.0,
-        "global_rank": 20811,
+        "global_rank": 20871,
         "global_rank_percent": 627.0,
         "pp": 7943.97,
-        "ranked_score": 24633465952,
+        "ranked_score": 24663479736,
         "hit_accuracy": 99.1382,
-        "play_count": 36741,
-        "play_time": 2815691,
-        "total_score": 88523349514,
+        "play_count": 36788,
+        "play_time": 2818532,
+        "total_score": 88661460566,
         "maximum_combo": 2595,
         "replays_watched_by_others": 28,
         "grade_counts": {
@@ -2709,7 +2754,7 @@
             "ssh": 5,
             "s": 1027,
             "sh": 110,
-            "a": 2048
+            "a": 2047
         },
         "country_rank": 627,
         "team": {
@@ -2717,7 +2762,7 @@
             "name": "o!rdr"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 09:51:34"
+        "last_updated": "2026-02-11 11:28:32"
     },
     {
         "id": 12346561,
@@ -2735,18 +2780,18 @@
         ],
         "rank_highest": 3285,
         "follower_count": 70,
-        "count_100": 1563512,
-        "count_300": 15765642,
-        "count_50": 196535,
+        "count_100": 1563692,
+        "count_300": 15768891,
+        "count_50": 196565,
         "level": 100.0,
-        "global_rank": 5758,
+        "global_rank": 5793,
         "global_rank_percent": 173.0,
         "pp": 10393.8,
         "ranked_score": 15621399498,
         "hit_accuracy": 98.7785,
-        "play_count": 80330,
-        "play_time": 3904175,
-        "total_score": 95426422485,
+        "play_count": 80341,
+        "play_time": 3904952,
+        "total_score": 95440414857,
         "maximum_combo": 3193,
         "replays_watched_by_others": 169,
         "grade_counts": {
@@ -2759,7 +2804,7 @@
         "country_rank": 173,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 08:56:49"
+        "last_updated": "2026-02-11 11:28:32"
     },
     {
         "id": 12625709,
@@ -2779,18 +2824,18 @@
         ],
         "rank_highest": 8796,
         "follower_count": 27,
-        "count_100": 946693,
-        "count_300": 11965335,
-        "count_50": 101474,
+        "count_100": 947046,
+        "count_300": 11970631,
+        "count_50": 101486,
         "level": 101.0,
-        "global_rank": 21317,
-        "global_rank_percent": 649.0,
+        "global_rank": 21386,
+        "global_rank_percent": 650.0,
         "pp": 7890.7,
-        "ranked_score": 23711801941,
+        "ranked_score": 23714868851,
         "hit_accuracy": 99.215,
-        "play_count": 50706,
-        "play_time": 3339609,
-        "total_score": 127669824168,
+        "play_count": 50728,
+        "play_time": 3340974,
+        "total_score": 127719493614,
         "maximum_combo": 2869,
         "replays_watched_by_others": 100,
         "grade_counts": {
@@ -2800,10 +2845,10 @@
             "sh": 265,
             "a": 1336
         },
-        "country_rank": 649,
+        "country_rank": 650,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:51:22"
+        "last_updated": "2026-02-11 11:28:32"
     },
     {
         "id": 13080423,
@@ -2814,7 +2859,7 @@
             "Gray Dark",
             "sekibae"
         ],
-        "avatar_url": "https://a.ppy.sh/13080423?1766156813.jpeg",
+        "avatar_url": "https://a.ppy.sh/13080423?1770667558.jpeg",
         "cover_url": "https://assets.ppy.sh/user-profile-covers/13080423/146857d3406a60721340be0cf0b0a263a8b94c87245c3f009c77f0d94c89bba8.gif",
         "region": "Hauts-de-France",
         "is_active": 1,
@@ -2826,31 +2871,31 @@
         ],
         "rank_highest": 375,
         "follower_count": 242,
-        "count_100": 2406618,
-        "count_300": 22718048,
-        "count_50": 230593,
+        "count_100": 2407595,
+        "count_300": 22727849,
+        "count_50": 230687,
         "level": 103.0,
-        "global_rank": 1239,
+        "global_rank": 1243,
         "global_rank_percent": 38.0,
         "pp": 13501.6,
-        "ranked_score": 55772521098,
+        "ranked_score": 55803137594,
         "hit_accuracy": 98.6705,
-        "play_count": 84742,
-        "play_time": 5434101,
-        "total_score": 392642018902,
+        "play_count": 84772,
+        "play_time": 5436183,
+        "total_score": 392827829920,
         "maximum_combo": 7256,
-        "replays_watched_by_others": 177,
+        "replays_watched_by_others": 178,
         "grade_counts": {
             "ss": 100,
             "ssh": 12,
-            "s": 1248,
+            "s": 1249,
             "sh": 108,
-            "a": 1351
+            "a": 1352
         },
         "country_rank": 38,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 08:59:23"
+        "last_updated": "2026-02-11 11:28:33"
     },
     {
         "id": 13277528,
@@ -2876,7 +2921,7 @@
         "count_300": 23050622,
         "count_50": 407199,
         "level": 101.0,
-        "global_rank": 3495,
+        "global_rank": 3510,
         "global_rank_percent": 106.0,
         "pp": 11378.5,
         "ranked_score": 17664707185,
@@ -2896,7 +2941,7 @@
         "country_rank": 106,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 08:41:06"
+        "last_updated": "2026-02-11 11:28:33"
     },
     {
         "id": 14386661,
@@ -2916,18 +2961,18 @@
         ],
         "rank_highest": 20415,
         "follower_count": 115,
-        "count_100": 2130472,
-        "count_300": 14168522,
-        "count_50": 229098,
+        "count_100": 2135606,
+        "count_300": 14184354,
+        "count_50": 229865,
         "level": 100.0,
-        "global_rank": 34649,
-        "global_rank_percent": 1060.0,
+        "global_rank": 34759,
+        "global_rank_percent": 1065.0,
         "pp": 6981.29,
         "ranked_score": 14768553288,
         "hit_accuracy": 98.5105,
-        "play_count": 58069,
-        "play_time": 3787891,
-        "total_score": 92377093803,
+        "play_count": 58089,
+        "play_time": 3792035,
+        "total_score": 92406912805,
         "maximum_combo": 3150,
         "replays_watched_by_others": 8,
         "grade_counts": {
@@ -2937,13 +2982,13 @@
             "sh": 46,
             "a": 1379
         },
-        "country_rank": 1060,
+        "country_rank": 1065,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/2801/557ef07081e7e126678845abc01cd64e366dbe6041fafe979f034de3dc218cf1.png",
             "name": "Aujourd'hui on VAZ"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 09:56:40"
+        "last_updated": "2026-02-11 11:28:35"
     },
     {
         "id": 14427114,
@@ -2963,34 +3008,34 @@
         ],
         "rank_highest": 48217,
         "follower_count": 148,
-        "count_100": 1540234,
-        "count_300": 16413019,
-        "count_50": 182191,
+        "count_100": 1542310,
+        "count_300": 16452068,
+        "count_50": 182348,
         "level": 101.0,
-        "global_rank": 58067,
-        "global_rank_percent": 1832.0,
-        "pp": 6023.98,
-        "ranked_score": 121036850946,
-        "hit_accuracy": 99.0666,
-        "play_count": 89572,
-        "play_time": 4686592,
-        "total_score": 189936047621,
+        "global_rank": 58222,
+        "global_rank_percent": 1836.0,
+        "pp": 6024.03,
+        "ranked_score": 121587468657,
+        "hit_accuracy": 99.0664,
+        "play_count": 89686,
+        "play_time": 4695235,
+        "total_score": 190656259670,
         "maximum_combo": 9870,
-        "replays_watched_by_others": 307,
+        "replays_watched_by_others": 309,
         "grade_counts": {
             "ss": 12,
-            "ssh": 1868,
-            "s": 871,
-            "sh": 2825,
-            "a": 5644
+            "ssh": 1869,
+            "s": 870,
+            "sh": 2828,
+            "a": 5668
         },
-        "country_rank": 1832,
+        "country_rank": 1836,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/5582/cb79e0564f09bf3f43c54f987c93b37f753ae676349ad188f4086595216fdebe.png",
             "name": "_blank"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 09:57:42"
+        "last_updated": "2026-02-11 11:28:35"
     },
     {
         "id": 14817230,
@@ -3052,8 +3097,8 @@
         "count_300": 4879790,
         "count_50": 61749,
         "level": 99.0,
-        "global_rank": 192386,
-        "global_rank_percent": 6704.0,
+        "global_rank": 192931,
+        "global_rank_percent": 6726.0,
         "pp": 3727.72,
         "ranked_score": 5514711930,
         "hit_accuracy": 98.3134,
@@ -3069,10 +3114,10 @@
             "sh": 292,
             "a": 1146
         },
-        "country_rank": 6704,
+        "country_rank": 6726,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:58:23"
+        "last_updated": "2026-02-11 11:28:36"
     },
     {
         "id": 15562878,
@@ -3138,18 +3183,18 @@
         ],
         "rank_highest": 38215,
         "follower_count": 39,
-        "count_100": 2315898,
-        "count_300": 18784123,
-        "count_50": 187805,
+        "count_100": 2317214,
+        "count_300": 18795088,
+        "count_50": 187922,
         "level": 100.0,
-        "global_rank": 43094,
-        "global_rank_percent": 1348.0,
+        "global_rank": 43218,
+        "global_rank_percent": 1355.0,
         "pp": 6572.53,
         "ranked_score": 20757147299,
         "hit_accuracy": 98.771,
-        "play_count": 97576,
-        "play_time": 4966245,
-        "total_score": 121482324944,
+        "play_count": 97622,
+        "play_time": 4968800,
+        "total_score": 121547237777,
         "maximum_combo": 2270,
         "replays_watched_by_others": 7,
         "grade_counts": {
@@ -3159,13 +3204,13 @@
             "sh": 10,
             "a": 782
         },
-        "country_rank": 1348,
+        "country_rank": 1355,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/5311/2f0f7ca940e5ea79b75906e89c123de0aa33f2695888f7d6279996c76fafe770.png",
             "name": "MineDeRien"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 09:57:33"
+        "last_updated": "2026-02-11 11:28:36"
     },
     {
         "id": 15883685,
@@ -3192,8 +3237,8 @@
         "count_300": 10658629,
         "count_50": 148555,
         "level": 100.0,
-        "global_rank": 31192,
-        "global_rank_percent": 949.0,
+        "global_rank": 31303,
+        "global_rank_percent": 951.0,
         "pp": 7174.8,
         "ranked_score": 7186133520,
         "hit_accuracy": 98.496,
@@ -3209,10 +3254,10 @@
             "sh": 50,
             "a": 707
         },
-        "country_rank": 949,
+        "country_rank": 951,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:56:18"
+        "last_updated": "2026-02-11 11:28:36"
     },
     {
         "id": 16366400,
@@ -3281,8 +3326,8 @@
         "count_300": 11093829,
         "count_50": 142004,
         "level": 100.0,
-        "global_rank": 77529,
-        "global_rank_percent": 2483.0,
+        "global_rank": 77759,
+        "global_rank_percent": 2491.0,
         "pp": 5492.24,
         "ranked_score": 13651880223,
         "hit_accuracy": 99.2734,
@@ -3298,10 +3343,10 @@
             "sh": 482,
             "a": 2692
         },
-        "country_rank": 2483,
+        "country_rank": 2491,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:57:37"
+        "last_updated": "2026-02-11 11:28:37"
     },
     {
         "id": 16670158,
@@ -3313,7 +3358,7 @@
         "avatar_url": "https://a.ppy.sh/16670158?1742740351.jpeg",
         "cover_url": "https://assets.ppy.sh/user-profile-covers/16670158/957c34c3337ca54f246e18ba7fffbdb076a9dec87b672c35dad0cf519bd78f35.png",
         "region": "Hauts-de-France",
-        "is_active": 0,
+        "is_active": 1,
         "is_deleted": 0,
         "has_supported": 1,
         "playstyle": null,
@@ -3323,8 +3368,8 @@
         "count_300": 4085471,
         "count_50": 47422,
         "level": 100.0,
-        "global_rank": 69053,
-        "global_rank_percent": 2218.0,
+        "global_rank": 69266,
+        "global_rank_percent": 2225.0,
         "pp": 5701.65,
         "ranked_score": 6452677365,
         "hit_accuracy": 98.4774,
@@ -3340,10 +3385,10 @@
             "sh": 5,
             "a": 540
         },
-        "country_rank": 2218,
+        "country_rank": 2225,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:58:37"
+        "last_updated": "2026-02-11 11:28:37"
     },
     {
         "id": 17046995,
@@ -3361,18 +3406,18 @@
         ],
         "rank_highest": 19099,
         "follower_count": 29,
-        "count_100": 715772,
-        "count_300": 11388448,
-        "count_50": 68069,
+        "count_100": 716628,
+        "count_300": 11399705,
+        "count_50": 68188,
         "level": 100.0,
-        "global_rank": 26847,
-        "global_rank_percent": 811.0,
+        "global_rank": 26932,
+        "global_rank_percent": 813.0,
         "pp": 7453.31,
-        "ranked_score": 20718340368,
+        "ranked_score": 20723312412,
         "hit_accuracy": 99.3577,
-        "play_count": 67871,
-        "play_time": 3037675,
-        "total_score": 102073640263,
+        "play_count": 67919,
+        "play_time": 3040440,
+        "total_score": 102130834793,
         "maximum_combo": 3081,
         "replays_watched_by_others": 8,
         "grade_counts": {
@@ -3380,12 +3425,12 @@
             "ssh": 219,
             "s": 1532,
             "sh": 102,
-            "a": 1506
+            "a": 1508
         },
-        "country_rank": 811,
+        "country_rank": 813,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:54:16"
+        "last_updated": "2026-02-11 11:28:37"
     },
     {
         "id": 19879003,
@@ -3406,18 +3451,18 @@
         ],
         "rank_highest": 6098,
         "follower_count": 74,
-        "count_100": 2949703,
-        "count_300": 22963632,
-        "count_50": 377584,
+        "count_100": 2956643,
+        "count_300": 23008955,
+        "count_50": 378622,
         "level": 101.0,
-        "global_rank": 7027,
-        "global_rank_percent": 206.0,
+        "global_rank": 7056,
+        "global_rank_percent": 209.0,
         "pp": 10044.8,
-        "ranked_score": 30707831456,
+        "ranked_score": 30733925576,
         "hit_accuracy": 98.3617,
-        "play_count": 118117,
-        "play_time": 5447732,
-        "total_score": 152838574176,
+        "play_count": 118307,
+        "play_time": 5457195,
+        "total_score": 152977691681,
         "maximum_combo": 3586,
         "replays_watched_by_others": 20,
         "grade_counts": {
@@ -3425,15 +3470,15 @@
             "ssh": 13,
             "s": 429,
             "sh": 236,
-            "a": 3098
+            "a": 3102
         },
-        "country_rank": 206,
+        "country_rank": 209,
         "team": {
             "flag_url": "https://assets.ppy.sh/teams/flag/35706/0e70ac59fd2bea785d747cf5c14ca03ad376614523f29e39584da010e2617504.jpeg",
             "name": "Meowl de neme"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 09:53:56"
+        "last_updated": "2026-02-11 11:28:38"
     },
     {
         "id": 20085174,
@@ -3496,8 +3541,8 @@
         "count_300": 18545183,
         "count_50": 136918,
         "level": 101.0,
-        "global_rank": 14181,
-        "global_rank_percent": 422.0,
+        "global_rank": 14226,
+        "global_rank_percent": 423.0,
         "pp": 8691.46,
         "ranked_score": 30896135896,
         "hit_accuracy": 98.9454,
@@ -3513,10 +3558,10 @@
             "sh": 82,
             "a": 1765
         },
-        "country_rank": 422,
+        "country_rank": 423,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:46:00"
+        "last_updated": "2026-02-11 11:28:38"
     },
     {
         "id": 21966174,
@@ -3534,26 +3579,26 @@
         ],
         "rank_highest": 1064,
         "follower_count": 178,
-        "count_100": 3207493,
-        "count_300": 24617026,
-        "count_50": 368086,
+        "count_100": 3212336,
+        "count_300": 24679593,
+        "count_50": 368440,
         "level": 101.0,
-        "global_rank": 1123,
+        "global_rank": 1126,
         "global_rank_percent": 33.0,
-        "pp": 13705.6,
-        "ranked_score": 29322084856,
-        "hit_accuracy": 97.5673,
-        "play_count": 126426,
-        "play_time": 5995427,
-        "total_score": 175799231521,
+        "pp": 13705.9,
+        "ranked_score": 29363041390,
+        "hit_accuracy": 97.5668,
+        "play_count": 126637,
+        "play_time": 6005538,
+        "total_score": 176352115667,
         "maximum_combo": 3660,
-        "replays_watched_by_others": 936,
+        "replays_watched_by_others": 938,
         "grade_counts": {
             "ss": 78,
             "ssh": 497,
-            "s": 1122,
+            "s": 1121,
             "sh": 543,
-            "a": 2387
+            "a": 2396
         },
         "country_rank": 33,
         "team": {
@@ -3561,7 +3606,7 @@
             "name": "BLUD"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 09:51:40"
+        "last_updated": "2026-02-11 11:28:39"
     },
     {
         "id": 24586246,
@@ -3585,8 +3630,8 @@
         "count_300": 740784,
         "count_50": 14321,
         "level": 75.0,
-        "global_rank": 584937,
-        "global_rank_percent": 21738.0,
+        "global_rank": 586999,
+        "global_rank_percent": 21826.0,
         "pp": 1626.69,
         "ranked_score": 1021673676,
         "hit_accuracy": 95.7939,
@@ -3602,9 +3647,9 @@
             "sh": 10,
             "a": 379
         },
-        "country_rank": 21738,
+        "country_rank": 21826,
         "team": null,
         "default_group": "default",
-        "last_updated": "2026-02-06 09:59:00"
+        "last_updated": "2026-02-11 11:28:39"
     }
 ]

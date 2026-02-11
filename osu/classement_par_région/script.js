@@ -73,6 +73,7 @@ async function loadRegion(regionName) {
         document.getElementById('home-section').classList.add('hidden');
         document.getElementById('ranking-section').classList.remove('hidden');
         document.getElementById('current-region-title').textContent = `${regionName}`;
+        loadMetadata();
         currentSort = { column: 'global_rank', direction: 'asc' };
         renderTable();
     }
@@ -341,5 +342,23 @@ function hideTooltip() {
     if (tooltipEl) {
         tooltipEl.style.display = 'none';
         tooltipEl.innerHTML = '';
+    }
+}
+
+async function loadMetadata() {
+    const badge = document.getElementById('last-update-badge');
+    if (!badge) return;
+
+    try {
+        const response = await fetch(`exports_regions/metadata.json?t=${Date.now()}`);
+        if (!response.ok) throw new Error("Meta introuvable");
+        const data = await response.json();
+        badge.innerHTML = `<span class="update-icon">🕒</span> Dernière mise à jour : <b>${data.last_updated}</b>`;
+        badge.style.opacity = "1";
+    }
+    
+    catch (error) {
+        console.error("Impossible de charger la date de mise à jour", error);
+        badge.style.opacity = "0";
     }
 }

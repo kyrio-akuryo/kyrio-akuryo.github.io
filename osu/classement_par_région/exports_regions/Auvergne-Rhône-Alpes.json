@@ -16,27 +16,27 @@
             "tablet"
         ],
         "rank_highest": 320,
-        "follower_count": 447,
-        "count_100": 5101685,
-        "count_300": 83284991,
-        "count_50": 494964,
+        "follower_count": 449,
+        "count_100": 5105034,
+        "count_300": 83308486,
+        "count_50": 495294,
         "level": 110.0,
-        "global_rank": 521,
+        "global_rank": 526,
         "global_rank_percent": 15.0,
         "pp": 15237.7,
-        "ranked_score": 111005563208,
+        "ranked_score": 111054405203,
         "hit_accuracy": 97.6474,
-        "play_count": 337946,
-        "play_time": 16134127,
-        "total_score": 1069329961969,
+        "play_count": 338005,
+        "play_time": 16138808,
+        "total_score": 1069974095993,
         "maximum_combo": 8253,
-        "replays_watched_by_others": 2123,
+        "replays_watched_by_others": 2125,
         "grade_counts": {
             "ss": 76,
             "ssh": 64,
             "s": 733,
             "sh": 1177,
-            "a": 3829
+            "a": 3830
         },
         "country_rank": 15,
         "team": {
@@ -44,6 +44,6 @@
             "name": "YuriNation"
         },
         "default_group": "default",
-        "last_updated": "2026-02-06 08:59:27"
+        "last_updated": "2026-02-11 11:28:34"
     }
 ]

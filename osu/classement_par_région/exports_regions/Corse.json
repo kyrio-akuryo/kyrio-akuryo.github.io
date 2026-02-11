@@ -1,0 +1,47 @@
+[
+    {
+        "id": 4064914,
+        "username": "Saizu",
+        "previous_usernames": [
+            "SaizuSan",
+            "S a i z u"
+        ],
+        "avatar_url": "https://a.ppy.sh/4064914?1458587667.png",
+        "cover_url": "https://assets.ppy.sh/user-cover-presets/3/32ddb3eb261e38a82067f9ef4ea96c12f6abf8bd228e6413330f9d351420301b.jpeg",
+        "region": "Corse",
+        "is_active": 0,
+        "is_deleted": 0,
+        "has_supported": 1,
+        "playstyle": [
+            "keyboard",
+            "tablet"
+        ],
+        "rank_highest": 333,
+        "follower_count": 122,
+        "count_100": 1545745,
+        "count_300": 17255230,
+        "count_50": 223505,
+        "level": 101.0,
+        "global_rank": null,
+        "global_rank_percent": null,
+        "pp": 0.0,
+        "ranked_score": 26831341185,
+        "hit_accuracy": 99.1733,
+        "play_count": 85992,
+        "play_time": 4031967,
+        "total_score": 169884605276,
+        "maximum_combo": 5086,
+        "replays_watched_by_others": 1397,
+        "grade_counts": {
+            "ss": 20,
+            "ssh": 13,
+            "s": 804,
+            "sh": 145,
+            "a": 1406
+        },
+        "country_rank": null,
+        "team": null,
+        "default_group": "default",
+        "last_updated": "2026-02-06 10:35:31"
+    }
+]
