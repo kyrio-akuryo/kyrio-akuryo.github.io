@@ -304,12 +304,12 @@ tbody tr {
 }
 
 tbody tr:hover {
-    transform: scale(1.01);
+    transform: none;
     z-index: 50;
     position: relative;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    filter: brightness(1.1);
-    background-color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    filter: brightness(1.2);
+    background-color: #383842;
 }
 
 td {

@@ -230,16 +230,12 @@ function renderTable() {
             }
 
             let tooltipHTML = "";
+            let nameTooltipEvents = "";
 
             if (player.previous_usernames && player.previous_usernames.length > 0) {
                 const namesList = player.previous_usernames.join("<br>");
                 const prevNameContent = `<div style='color:#aaa; font-size:0.7em; text-transform:uppercase; margin-bottom:5px;'>Anciennement :</div>${namesList}`;
-
-                nameTooltipEvents = `
-                    onmouseenter="showTooltip(event, \`${prevNameContent}\`)" 
-                    onmousemove="moveTooltip(event)" 
-                    onmouseleave="hideTooltip()"
-                `;
+                nameTooltipEvents = `onmouseenter="showTooltip(event, \`${prevNameContent}\`)" onmousemove="moveTooltip(event)" onmouseleave="hideTooltip()"`;
             }
 
             tr.innerHTML = `
@@ -248,13 +244,12 @@ function renderTable() {
                    <div class="player-info">
                         <img src="${avatar}" alt="" class="avatar" loading="lazy">
                         <div style="display:flex; flex-direction:column;">
-                            <div class="name-container">
+                            <div class="name-container" ${nameTooltipEvents}>
                                 <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="player-link ${groupClass}">
                                     ${player.username}
                                 </a>
                                 ${supporterHTML}
-                                ${tooltipHTML}
-                            </div>
+                                </div>
                             ${groupBadgeHTML}
                         </div>
                     </div>
@@ -323,8 +318,21 @@ function showTooltip(event, content) {
 
 function moveTooltip(event) {
     if (!tooltipEl || tooltipEl.style.display === 'none') return;
-    const x = event.clientX + 15;
-    const y = event.clientY + 15;
+    const tooltipWidth = tooltipEl.offsetWidth;
+    const tooltipHeight = tooltipEl.offsetHeight;
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+    let x = event.clientX + 15;
+    let y = event.clientY + 15;
+
+    if (x + tooltipWidth > windowWidth) {
+        x = event.clientX - tooltipWidth - 15;
+    }
+
+    if (y + tooltipHeight > windowHeight) {
+        y = event.clientY - tooltipHeight - 15;
+    }
+
     tooltipEl.style.left = x + 'px';
     tooltipEl.style.top = y + 'px';
 }
