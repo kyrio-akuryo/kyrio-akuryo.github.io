@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #a0a0a0;
+    margin-bottom: 30px;
+}
+
+.category {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #2a2a2a;
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+}
+
+.category h3 {
+    margin-top: 0;
+    color: #64b5f6;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.btn-generate {
+    background-color: #1976d2;
+    color: white;
+    flex: 1;
+}
+
+.btn-generate:hover {
+    background-color: #1565c0;
+}
+
+.btn-copy {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.btn-copy:hover {
+    background-color: #1b5e20;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+textarea::placeholder {
+    color: #777;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.input-group label:hover {
+    color: #ffffff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+    accent-color: #3498db;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.ignore-label {
+    font-size: 0.8em;
+    cursor: pointer;
+    color: #888;
+}
+
+.ignore-label:hover {
+    color: #ff4444;
+}

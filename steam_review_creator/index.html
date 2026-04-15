@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam review generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Steam review generator</h1>
+        <p class="subtitle">Select the options to generate the review.</p>
+
+        <form id="reviewForm">
+            <div class="category">
+                <div class="category-header">
+                    <h3>Graphics</h3>
+                    <label class="ignore-label"><input type="checkbox" class="ignore-cat"> Ignore</label>
+                </div>
+                <div class="input-group">
+                    <label><input type="radio" name="graphics" value="Photorealistic" data-score="5">
+                        Photorealistic</label>
+                    <label><input type="radio" name="graphics" value="Stunning" data-score="4"> Stunning</label>
+                    <label><input type="radio" name="graphics" value="Sharp" data-score="3"> Sharp</label>
+                    <label><input type="radio" name="graphics" value="Functional" data-score="2"> Functional</label>
+                    <label><input type="radio" name="graphics" value="Dated" data-score="1"> Dated</label>
+                    <label><input type="radio" name="graphics" value="Eyesore" data-score="0"> Eyesore</label>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-header">
+                    <h3>Gameplay</h3>
+                    <label class="ignore-label"><input type="checkbox" class="ignore-cat"> Ignore</label>
+                </div>
+                <div class="input-group">
+                    <label><input type="radio" name="gameplay" value="Masterpiece" data-score="5"> Masterpiece</label>
+                    <label><input type="radio" name="gameplay" value="Outstanding" data-score="4"> Outstanding</label>
+                    <label><input type="radio" name="gameplay" value="Solid" data-score="3"> Solid</label>
+                    <label><input type="radio" name="gameplay" value="Mediocre" data-score="2"> Mediocre</label>
+                    <label><input type="radio" name="gameplay" value="Poor" data-score="1"> Poor</label>
+                    <label><input type="radio" name="gameplay" value="Unplayable" data-score="0"> Unplayable</label>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-header">
+                    <h3>Audio</h3>
+                    <label class="ignore-label"><input type="checkbox" class="ignore-cat"> Ignore</label>
+                </div>
+                <div class="input-group">
+                    <label><input type="radio" name="audio" value="Transcendent" data-score="5"> Transcendent</label>
+                    <label><input type="radio" name="audio" value="Immersive" data-score="4"> Immersive</label>
+                    <label><input type="radio" name="audio" value="Atmospheric" data-score="3"> Atmospheric</label>
+                    <label><input type="radio" name="audio" value="Flat" data-score="2"> Flat</label>
+                    <label><input type="radio" name="audio" value="Thin" data-score="1"> Thin</label>
+                    <label><input type="radio" name="audio" value="Silent / Grating" data-score="0"> Silent /
+                        Grating</label>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-header">
+                    <h3>Optimization</h3>
+                    <label class="ignore-label"><input type="checkbox" class="ignore-cat"> Ignore</label>
+                </div>
+                <div class="input-group">
+                    <label><input type="radio" name="optimization" value="Flawless" data-score="5"> Flawless</label>
+                    <label><input type="radio" name="optimization" value="Optimized" data-score="4"> Optimized</label>
+                    <label><input type="radio" name="optimization" value="Stable" data-score="3"> Stable</label>
+                    <label><input type="radio" name="optimization" value="Poor" data-score="2"> Poor</label>
+                    <label><input type="radio" name="optimization" value="Unstable" data-score="1"> Unstable</label>
+                    <label><input type="radio" name="optimization" value="Broken" data-score="0"> Broken</label>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-header">
+                    <h3>Content</h3>
+                    <label class="ignore-label"><input type="checkbox" class="ignore-cat"> Ignore</label>
+                </div>
+                <div class="input-group">
+                    <label><input type="radio" name="content" value="Immense" data-score="5"> Immense</label>
+                    <label><input type="radio" name="content" value="Generous" data-score="4"> Generous</label>
+                    <label><input type="radio" name="content" value="Substantial" data-score="3"> Substantial</label>
+                    <label><input type="radio" name="content" value="Thin" data-score="2"> Thin</label>
+                    <label><input type="radio" name="content" value="Shallow" data-score="1"> Shallow</label>
+                    <label><input type="radio" name="content" value="Empty" data-score="0"> Empty</label>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-header">
+                    <h3>Story</h3>
+                    <label class="ignore-label"><input type="checkbox" class="ignore-cat"> Ignore</label>
+                </div>
+                <div class="input-group">
+                    <label><input type="radio" name="story" value="Profound" data-score="5"> Profound</label>
+                    <label><input type="radio" name="story" value="Gripping" data-score="4"> Gripping</label>
+                    <label><input type="radio" name="story" value="Compelling" data-score="3"> Compelling</label>
+                    <label><input type="radio" name="story" value="Functional" data-score="2"> Functional</label>
+                    <label><input type="radio" name="story" value="Shallow" data-score="1"> Shallow</label>
+                    <label><input type="radio" name="story" value="Incoherent" data-score="0"> Incoherent</label>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-header">
+                    <h3>Difficulty / Grind</h3>
+                    <label class="ignore-label"><input type="checkbox" class="ignore-cat"> Ignore</label>
+                </div>
+                <div class="input-group">
+                    <label><input type="radio" name="difficulty" value="Harmonious" data-score="5"> Harmonious</label>
+                    <label><input type="radio" name="difficulty" value="Rewarding" data-score="4"> Rewarding</label>
+                    <label><input type="radio" name="difficulty" value="Balanced" data-score="3"> Balanced</label>
+                    <label><input type="radio" name="difficulty" value="Spiky" data-score="2"> Spiky</label>
+                    <label><input type="radio" name="difficulty" value="Brutal" data-score="1"> Brutal</label>
+                    <label><input type="radio" name="difficulty" value="Unfair" data-score="0"> Unfair</label>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-header">
+                    <h3>Lifetime</h3>
+                    <label class="ignore-label"><input type="checkbox" class="ignore-cat"> Ignore</label>
+                </div>
+                <div class="input-group">
+                    <label><input type="radio" name="lifetime" value="Endless" data-score="5"> Endless</label>
+                    <label><input type="radio" name="lifetime" value="Substantial" data-score="4"> Substantial</label>
+                    <label><input type="radio" name="lifetime" value="Respectable" data-score="3"> Respectable</label>
+                    <label><input type="radio" name="lifetime" value="Modest" data-score="2"> Modest</label>
+                    <label><input type="radio" name="lifetime" value="Brief" data-score="1"> Brief</label>
+                    <label><input type="radio" name="lifetime" value="Fleeting" data-score="0"> Fleeting</label>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-header">
+                    <h3>Price</h3>
+                    <label class="ignore-label"><input type="checkbox" class="ignore-cat"> Ignore</label>
+                </div>
+                <div class="input-group">
+                    <label><input type="radio" name="price" value="A Steal" data-score="5"> A Steal</label>
+                    <label><input type="radio" name="price" value="Great Value" data-score="4"> Great Value</label>
+                    <label><input type="radio" name="price" value="Fair" data-score="3"> Fair</label>
+                    <label><input type="radio" name="price" value="Pricey" data-score="2"> Pricey</label>
+                    <label><input type="radio" name="price" value="Overpriced" data-score="1"> Overpriced</label>
+                    <label><input type="radio" name="price" value="A Rip-off" data-score="0"> A Rip-off</label>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-header">
+                    <h3>Bugs</h3>
+                    <label class="ignore-label"><input type="checkbox" class="ignore-cat"> Ignore</label>
+                </div>
+                <div class="input-group">
+                    <label><input type="radio" name="bugs" value="Pristine" data-score="5"> Pristine</label>
+                    <label><input type="radio" name="bugs" value="Polished" data-score="4"> Polished</label>
+                    <label><input type="radio" name="bugs" value="Solid" data-score="3"> Solid</label>
+                    <label><input type="radio" name="bugs" value="Rough" data-score="2"> Rough</label>
+                    <label><input type="radio" name="bugs" value="Buggy" data-score="1"> Buggy</label>
+                    <label><input type="radio" name="bugs" value="Broken" data-score="0"> Broken</label>
+                </div>
+            </div>
+        </form>
+
+        <div class="btn-group">
+            <button type="button" class="btn-generate" onclick="genererRevue()">Generate the review</button>
+            <button type="button" class="btn-copy" onclick="copierTexte()">Copy the text</button>
+        </div>
+
+        <textarea id="result" placeholder="Your generated review will appear here..."></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
